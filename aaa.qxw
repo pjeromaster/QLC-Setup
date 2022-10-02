@@ -214,7 +214,7 @@
     <Enable>
      <Input Universe="1" Channel="23"/>
     </Enable>
-    <Slider Caption="" ID="62" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="62" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="24" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -230,7 +230,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="63" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="63" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="88" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -246,7 +246,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="64" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="64" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="344" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -262,7 +262,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="65" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="65" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="728" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -278,7 +278,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="66" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="66" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="664" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -294,7 +294,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="67" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="67" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="600" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -310,7 +310,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="68" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="68" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="536" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -326,7 +326,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="69" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="69" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="472" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -342,7 +342,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="70" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="70" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="408" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -358,7 +358,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="71" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="71" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="280" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -374,7 +374,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="72" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="72" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="216" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -390,7 +390,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="73" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="73" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="152" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -406,7 +406,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="74" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="74" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="24" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -422,7 +422,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="75" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="75" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="88" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -438,7 +438,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="76" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="76" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="152" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -454,7 +454,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="77" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="77" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="216" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -470,7 +470,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="78" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="78" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="280" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -486,7 +486,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="79" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="79" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="344" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -502,7 +502,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="80" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="80" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="408" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -518,7 +518,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="81" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="81" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="472" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -534,7 +534,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="82" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="82" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="536" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -550,7 +550,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="83" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="83" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="600" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -566,7 +566,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="84" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="84" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="664" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
@@ -582,7 +582,7 @@
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-    <Slider Caption="" ID="85" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
+    <Slider Caption="" ID="85" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="false">
      <WindowState Visible="True" X="728" Y="420" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
