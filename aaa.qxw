@@ -8,10 +8,12 @@
  </Creator>
  <Engine>
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0" Passthrough="True">
-    <Input Plugin="MIDI" UID="USB2.0-MIDI" Line="0" Profile="Behringer LC2412"/>
-   </Universe>
+   <Universe Name="Universe 1" ID="0" Passthrough="True"/>
    <Universe Name="Universe 2" ID="1">
+    <Input Plugin="MIDI" UID="USB2.0-MIDI" Line="0" Profile="Behringer LC2412"/>
+    <Output Plugin="MIDI" UID="MIDIOUT2 (USB2.0-MIDI)" Line="2"/>
+   </Universe>
+   <Universe Name="Universe 3" ID="2">
     <Input Plugin="OS2L" UID="OS2L line" Line="0"/>
    </Universe>
   </InputOutputMap>
@@ -199,7 +201,7 @@
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
      <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>Z:/eurolight3.png</BackgroundImage>
+     <BackgroundImage>eurolight3.png</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
     <WindowState Visible="True" X="0" Y="0" Width="1365" Height="775"/>
@@ -209,16 +211,19 @@
     <ShowEnableButton>False</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
+    <Enable>
+     <Input Universe="1" Channel="23"/>
+    </Enable>
     <Slider Caption="" ID="62" WidgetStyle="Slider" InvertedAppearance="false" CatchValues="true">
      <WindowState Visible="True" X="24" Y="100" Width="55" Height="270"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="0"/>
+     <Input Universe="1" Channel="0"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -231,10 +236,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="1"/>
+     <Input Universe="1" Channel="1"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -247,10 +252,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="5"/>
+     <Input Universe="1" Channel="5"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -263,10 +268,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="11"/>
+     <Input Universe="1" Channel="11"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -279,10 +284,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="10"/>
+     <Input Universe="1" Channel="10"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -295,10 +300,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="9"/>
+     <Input Universe="1" Channel="9"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -311,10 +316,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="8"/>
+     <Input Universe="1" Channel="8"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -327,10 +332,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="7"/>
+     <Input Universe="1" Channel="7"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -343,10 +348,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="6"/>
+     <Input Universe="1" Channel="6"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -359,10 +364,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="4"/>
+     <Input Universe="1" Channel="4"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -375,10 +380,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="3"/>
+     <Input Universe="1" Channel="3"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -391,10 +396,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="2"/>
+     <Input Universe="1" Channel="2"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -407,10 +412,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="12"/>
+     <Input Universe="1" Channel="12"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -423,10 +428,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="13"/>
+     <Input Universe="1" Channel="13"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -439,10 +444,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="14"/>
+     <Input Universe="1" Channel="14"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -455,10 +460,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="15"/>
+     <Input Universe="1" Channel="15"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -471,10 +476,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="16"/>
+     <Input Universe="1" Channel="16"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -487,10 +492,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="17"/>
+     <Input Universe="1" Channel="17"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -503,10 +508,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="18"/>
+     <Input Universe="1" Channel="18"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -519,10 +524,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="19"/>
+     <Input Universe="1" Channel="19"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -535,10 +540,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="20"/>
+     <Input Universe="1" Channel="20"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -551,10 +556,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="21"/>
+     <Input Universe="1" Channel="21"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -567,10 +572,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="22"/>
+     <Input Universe="1" Channel="22"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -583,10 +588,10 @@
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
       <BackgroundColor>Default</BackgroundColor>
-      <BackgroundImage>Z:/layer5.png</BackgroundImage>
+      <BackgroundImage>layer5.png</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <Input Universe="0" Channel="23"/>
+     <Input Universe="1" Channel="23"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0"/>
      <Playback>
@@ -614,7 +619,7 @@
   <Properties>
    <Size Width="1920" Height="1080"/>
    <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
-    <Input Universe="0" Channel="27"/>
+    <Input Universe="1" Channel="27"/>
    </GrandMaster>
   </Properties>
  </VirtualConsole>
