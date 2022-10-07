@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>Proxy</Author>
+ </Creator>
+ <Manufacturer>Ibiza</Manufacturer>
+ <Model>CROSS-GOBOFcX</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Color Chase">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">no function</Capability>
+  <Capability Min="8" Max="22">Chase 01</Capability>
+  <Capability Min="23" Max="37">Chase 02</Capability>
+  <Capability Min="38" Max="52">Chase 03</Capability>
+  <Capability Min="53" Max="67">Chase 04</Capability>
+  <Capability Min="68" Max="82">Chase 05</Capability>
+  <Capability Min="83" Max="97">Chase 06</Capability>
+  <Capability Min="98" Max="112">Chase 07</Capability>
+  <Capability Min="113" Max="127">Chase 08</Capability>
+  <Capability Min="128" Max="142">Chase 09</Capability>
+  <Capability Min="143" Max="157">Chase 10</Capability>
+  <Capability Min="158" Max="172">Chase 11</Capability>
+  <Capability Min="173" Max="187">Chase 12</Capability>
+  <Capability Min="188" Max="202">Chase 13</Capability>
+  <Capability Min="203" Max="217">Chase 14</Capability>
+  <Capability Min="218" Max="232">Chase 15</Capability>
+  <Capability Min="233" Max="247">Chase 16</Capability>
+  <Capability Min="248" Max="255">All Chase</Capability>
+ </Channel>
+ <Channel Name="Sound sensitivity / auto speed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Chase Auto Speed Slow to fast</Capability>
+  <Capability Min="128" Max="255">Chase sound sensitivity low to high</Capability>
+ </Channel>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Red 3" Preset="IntensityRed"/>
+ <Channel Name="Red 4" Preset="IntensityRed"/>
+ <Channel Name="Red 5" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Green 3" Preset="IntensityGreen"/>
+ <Channel Name="Green 4" Preset="IntensityGreen"/>
+ <Channel Name="Green 5" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1" Preset="IntensityBlue"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="Blue 3" Preset="IntensityBlue"/>
+ <Channel Name="Blue 4" Preset="IntensityBlue"/>
+ <Channel Name="Blue 5" Preset="IntensityBlue"/>
+ <Channel Name="Amber 1" Preset="IntensityAmber"/>
+ <Channel Name="Amber 2" Preset="IntensityAmber"/>
+ <Channel Name="Amber 3" Preset="IntensityAmber"/>
+ <Channel Name="Amber 4" Preset="IntensityAmber"/>
+ <Channel Name="Amber 5" Preset="IntensityAmber"/>
+ <Channel Name="White dimmer" Preset="IntensityWhite"/>
+ <Channel Name="White Strobe">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="8" Max="255">Strobe (0%-100%)</Capability>
+ </Channel>
+ <Channel Name="S-White 1" Preset="IntensityWhite"/>
+ <Channel Name="S-White 2" Preset="IntensityWhite"/>
+ <Channel Name="S-White 3" Preset="IntensityWhite"/>
+ <Channel Name="S-White 4" Preset="IntensityWhite"/>
+ <Mode Name="4 Channel Mode">
+  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Strobe</Channel>
+  <Channel Number="2" ActsOn="2">Color Chase</Channel>
+  <Channel Number="3" ActsOn="3">Sound sensitivity / auto speed</Channel>
+ </Mode>
+ <Mode Name="28 Channel Mode">
+  <Channel Number="0" ActsOn="0">Master dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Strobe</Channel>
+  <Channel Number="2" ActsOn="2">Red 1</Channel>
+  <Channel Number="3" ActsOn="3">Green 1</Channel>
+  <Channel Number="4" ActsOn="4">Blue 1</Channel>
+  <Channel Number="5" ActsOn="5">Amber 1</Channel>
+  <Channel Number="6" ActsOn="6">Red 2</Channel>
+  <Channel Number="7" ActsOn="7">Green 2</Channel>
+  <Channel Number="8" ActsOn="8">Blue 2</Channel>
+  <Channel Number="9" ActsOn="9">Amber 2</Channel>
+  <Channel Number="10" ActsOn="10">Red 3</Channel>
+  <Channel Number="11" ActsOn="11">Green 3</Channel>
+  <Channel Number="12" ActsOn="12">Blue 3</Channel>
+  <Channel Number="13" ActsOn="13">Amber 3</Channel>
+  <Channel Number="14" ActsOn="14">Red 4</Channel>
+  <Channel Number="15" ActsOn="15">Green 4</Channel>
+  <Channel Number="16" ActsOn="16">Blue 4</Channel>
+  <Channel Number="17" ActsOn="17">Amber 4</Channel>
+  <Channel Number="18" ActsOn="18">Red 5</Channel>
+  <Channel Number="19" ActsOn="19">Green 5</Channel>
+  <Channel Number="20" ActsOn="20">Blue 5</Channel>
+  <Channel Number="21" ActsOn="21">Amber 5</Channel>
+  <Channel Number="22" ActsOn="22">White dimmer</Channel>
+  <Channel Number="23" ActsOn="23">White Strobe</Channel>
+  <Channel Number="24" ActsOn="24">S-White 1</Channel>
+  <Channel Number="25" ActsOn="25">S-White 2</Channel>
+  <Channel Number="26" ActsOn="26">S-White 3</Channel>
+  <Channel Number="27" ActsOn="27">S-White 4</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.02" Width="290" Height="290" Depth="230"/>
+  <Lens Name="PC" DegreesMin="8" DegreesMax="8"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="5" Height="4"/>
+  <Technical PowerConsumption="100" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
