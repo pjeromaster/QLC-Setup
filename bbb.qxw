@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2">
+    <Input Plugin="OS2L" UID="OS2L line" Line="0" Profile="Virtual DJ">
+     <PluginParameters hostAddress="192.168.178.122" hostPort="9996"/>
+    </Input>
+   </Universe>
+   <Universe Name="Universe 4" ID="3">
+    <Input Plugin="MIDI" UID="None" Line="0" Profile="Roland FP-30">
+     <PluginParameters MIDISendNoteOff="true"/>
+    </Input>
+    <Output Plugin="MIDI" UID="None" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 5" ID="4"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Par 56 90W COB RGB</Model>
+   <Mode>6 Channel</Mode>
+   <ID>0</ID>
+   <Name>RB</Name>
+   <Universe>0</Universe>
+   <Address>127</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Ibiza</Manufacturer>
+   <Model>CROSS-GOBOFcX</Model>
+   <Mode>4 Channel Mode</Mode>
+   <ID>1</ID>
+   <Name>CROSS-GOBOFcX</Name>
+   <Universe>0</Universe>
+   <Address>271</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>2</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Par 56 90W COB RGB</Model>
+   <Mode>6 Channel</Mode>
+   <ID>3</ID>
+   <Name>LB</Name>
+   <Universe>0</Universe>
+   <Address>191</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Par 56 90W COB RGB</Model>
+   <Mode>6 Channel</Mode>
+   <ID>4</ID>
+   <Name>LF</Name>
+   <Universe>0</Universe>
+   <Address>383</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Par 56 90W COB RGB</Model>
+   <Mode>6 Channel</Mode>
+   <ID>5</ID>
+   <Name>MF</Name>
+   <Universe>0</Universe>
+   <Address>399</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Par 56 90W COB RGB</Model>
+   <Mode>6 Channel</Mode>
+   <ID>6</ID>
+   <Name>RF</Name>
+   <Universe>0</Universe>
+   <Address>415</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Laserworld</Manufacturer>
+   <Model>EL-230RGB</Model>
+   <Mode>DMX</Mode>
+   <ID>7</ID>
+   <Name>EL-230RGB</Name>
+   <Universe>0</Universe>
+   <Address>223</Address>
+   <Channels>12</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>Mini Dekker</Model>
+   <Mode>9 Channel</Mode>
+   <ID>8</ID>
+   <Name>Mini Dekker</Name>
+   <Universe>0</Universe>
+   <Address>159</Address>
+   <Channels>9</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>9</ID>
+   <Name>MultiDim MK III DMX</Name>
+   <Universe>0</Universe>
+   <Address>175</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Stairville</Manufacturer>
+   <Model>maTrixx SC-100</Model>
+   <Mode>4-Channel Mode</Mode>
+   <ID>10</ID>
+   <Name>maTrixx SC-100</Name>
+   <Universe>0</Universe>
+   <Address>207</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>SP-1500 MKII</Model>
+   <Mode>Default</Mode>
+   <ID>11</ID>
+   <Name>SP-1500 MKII</Name>
+   <Universe>0</Universe>
+   <Address>287</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Pars</Name>
+   <Size X="3" Y="3"/>
+   <Head X="0" Y="0" Fixture="13">0</Head>
+   <Head X="2" Y="0" Fixture="6">0</Head>
+   <Head X="0" Y="1" Fixture="14">0</Head>
+   <Head X="0" Y="2" Fixture="15">0</Head>
+   <Head X="2" Y="2" Fixture="0">0</Head>
+  </FixtureGroup>
+  <Function ID="0" Type="Collection" Name="Nieuwe collectie 0">
+   <Step Number="0">2</Step>
+   <Step Number="1">1</Step>
+  </Function>
+  <Function ID="1" Type="Scene" Name="Nieuwe scene 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="2" Type="Chaser" Name="Nieuwe chaser 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Function ID="3" Type="Script" Name="Nieuw script 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <SpeedDial Caption="Duur" ID="0">
+    <WindowState Visible="False" X="660" Y="105" Width="55" Height="95"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>68</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Time>383</Time>
+   </SpeedDial>
+   <Slider Caption="Knop 26" ID="26" WidgetStyle="Knob" InvertedAppearance="false">
+    <WindowState Visible="False" X="985" Y="135" Width="60" Height="90"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <XYPad Caption="XY Pad" ID="27" InvertedAppearance="0">
+    <WindowState Visible="False" X="760" Y="385" Width="230" Height="230"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Fixture ID="7" Head="0">
+     <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
+     <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
+    </Fixture>
+    <Pan Position="0"/>
+    <Tilt Position="0"/>
+   </XYPad>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>

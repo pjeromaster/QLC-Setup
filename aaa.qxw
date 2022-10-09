@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.6</Version>
@@ -11,16 +11,17 @@
    <Universe Name="Universe 1" ID="0">
     <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
-   <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="0" Profile="Behringer LC2412"/>
-    <Output Plugin="MIDI" UID="None" Line="2"/>
-   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2">
     <Input Plugin="OS2L" UID="OS2L line" Line="0" Profile="Virtual DJ">
      <PluginParameters hostAddress="192.168.178.122" hostPort="9996"/>
     </Input>
    </Universe>
-   <Universe Name="Universe 4" ID="3"/>
+   <Universe Name="Universe 4" ID="3">
+    <Input Plugin="MIDI" UID="Roland Digital Piano" Line="0"/>
+    <Output Plugin="MIDI" UID="Roland Digital Piano" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 5" ID="4"/>
   </InputOutputMap>
   <Fixture>
    <Manufacturer>Showtec</Manufacturer>
@@ -161,9 +162,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="orientation" Value="Vertical"/>
    <Property Name="presetSize" Value="6"/>
    <Property Name="presetIndex" Value="Rainbow"/>
+   <Property Name="orientation" Value="Vertical"/>
   </Function>
   <Function ID="5" Type="Scene" Name="DiscoBall Light">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
