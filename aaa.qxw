@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.6</Version>
@@ -9,7 +9,9 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="None" Line="0">
+     <PluginParameters UniverseChannels="421"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2">
@@ -18,8 +20,8 @@
     </Input>
    </Universe>
    <Universe Name="Universe 4" ID="3">
-    <Input Plugin="MIDI" UID="Roland Digital Piano" Line="0"/>
-    <Output Plugin="MIDI" UID="Roland Digital Piano" Line="1"/>
+    <Input Plugin="MIDI" UID="None" Line="0"/>
+    <Output Plugin="MIDI" UID="None" Line="1"/>
    </Universe>
    <Universe Name="Universe 5" ID="4"/>
   </InputOutputMap>
@@ -34,11 +36,11 @@
    <Channels>6</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Ibiza</Manufacturer>
-   <Model>CROSS-GOBOFcX</Model>
-   <Mode>4 Channel Mode</Mode>
+   <Manufacturer>Ayra</Manufacturer>
+   <Model>TDC CROSS</Model>
+   <Mode>4 Channel DMX</Mode>
    <ID>1</ID>
-   <Name>CROSS-GOBOFcX</Name>
+   <Name>TDC CROSS</Name>
    <Universe>0</Universe>
    <Address>271</Address>
    <Channels>4</Channels>
@@ -110,7 +112,7 @@
    <ID>17</ID>
    <Name>Mini Dekker</Name>
    <Universe>0</Universe>
-   <Address>159</Address>
+   <Address>77</Address>
    <Channels>9</Channels>
   </Fixture>
   <Fixture>
@@ -162,9 +164,9 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
    <Property Name="presetSize" Value="6"/>
    <Property Name="presetIndex" Value="Rainbow"/>
-   <Property Name="orientation" Value="Vertical"/>
   </Function>
   <Function ID="5" Type="Scene" Name="DiscoBall Light">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -178,7 +180,6 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17"/>
    <FixtureVal ID="20">1,255</FixtureVal>
-   <FixtureVal ID="1">1,255</FixtureVal>
   </Function>
   <Function ID="8" Type="Chaser" Name="Nieuwe chaser 8">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -201,7 +202,6 @@
    <ValueStyle>0</ValueStyle>
    <Grid Width="4" Height="3" Depth="3" Units="0"/>
    <FxItem ID="0" XPos="3740" YPos="2655"/>
-   <FxItem ID="1" XPos="1855" YPos="1355"/>
    <FxItem ID="6" XPos="3740" YPos="300"/>
    <FxItem ID="13" XPos="0" YPos="0"/>
    <FxItem ID="14" XPos="0" YPos="1345"/>
@@ -1145,7 +1145,6 @@
      <Input Universe="1" Channel="24"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
      <Level LowLimit="0" HighLimit="255" Value="0">
-      <Channel Fixture="1">1</Channel>
       <Channel Fixture="17">4</Channel>
       <Channel Fixture="20">0</Channel>
      </Level>
