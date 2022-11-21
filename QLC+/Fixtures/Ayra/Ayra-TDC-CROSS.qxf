@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>Proxy</Author>
+ </Creator>
+ <Manufacturer>Ayra</Manufacturer>
+ <Model>TDC CROSS</Model>
+ <Type>Flower</Type>
+ <Channel Name="Pattern">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="17">Chase 1</Capability>
+  <Capability Min="18" Max="27">Chase 2</Capability>
+  <Capability Min="28" Max="37">Chase 3</Capability>
+  <Capability Min="38" Max="46">Chase 4</Capability>
+  <Capability Min="47" Max="56">Chase 5</Capability>
+  <Capability Min="57" Max="66">Chase 6</Capability>
+  <Capability Min="67" Max="75">Chase 7</Capability>
+  <Capability Min="76" Max="85">Chase 8</Capability>
+  <Capability Min="86" Max="95">Chase 9</Capability>
+  <Capability Min="96" Max="104">Chase 10</Capability>
+  <Capability Min="105" Max="114">Chase 11</Capability>
+  <Capability Min="115" Max="124">Chase 12</Capability>
+  <Capability Min="125" Max="133">Chase 13</Capability>
+  <Capability Min="134" Max="143">Chase 14</Capability>
+  <Capability Min="144" Max="153">Chase 15</Capability>
+  <Capability Min="154" Max="162">Chase 16</Capability>
+  <Capability Min="163" Max="172">Chase 17</Capability>
+  <Capability Min="173" Max="182">Chase 18</Capability>
+  <Capability Min="183" Max="191">Chase 19</Capability>
+  <Capability Min="192" Max="201">Chase 20</Capability>
+  <Capability Min="202" Max="211">Chase 21</Capability>
+  <Capability Min="212" Max="220">Chase 22</Capability>
+  <Capability Min="221" Max="230">Chase 23</Capability>
+  <Capability Min="231" Max="240">Chase 24</Capability>
+  <Capability Min="241" Max="249">Chase 25</Capability>
+  <Capability Min="250" Max="255">Random</Capability>
+ </Channel>
+ <Channel Name="Mode Selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">Off</Capability>
+  <Capability Min="10" Max="129">Synchronous show</Capability>
+  <Capability Min="130" Max="249">Asynchronous show</Capability>
+  <Capability Min="250" Max="255">Sound active</Capability>
+ </Channel>
+ <Channel Name="Chase Selection">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="21">Chase 1</Capability>
+  <Capability Min="22" Max="42">Chase 2</Capability>
+  <Capability Min="43" Max="63">Chase 3</Capability>
+  <Capability Min="64" Max="85">Chase 4</Capability>
+  <Capability Min="86" Max="106">Chase 5</Capability>
+  <Capability Min="107" Max="127">Chase 6</Capability>
+  <Capability Min="128" Max="149">Chase 7</Capability>
+  <Capability Min="150" Max="170">Chase 8</Capability>
+  <Capability Min="171" Max="191">Chase 9</Capability>
+  <Capability Min="192" Max="213">Chase 10</Capability>
+  <Capability Min="214" Max="234">Chase 11</Capability>
+  <Capability Min="235" Max="255">Chase 12</Capability>
+ </Channel>
+ <Channel Name="Variable speed (slow-fast)" Preset="SpeedPanTiltSlowFast"/>
+ <Channel Name="Strobe (slow-fast)" Preset="ShutterStrobeSlowFast"/>
+ <Mode Name="1 channel DMX mode">
+  <Channel Number="0" ActsOn="0">Pattern</Channel>
+ </Mode>
+ <Mode Name="4 Channel DMX">
+  <Channel Number="0" ActsOn="0">Mode Selection</Channel>
+  <Channel Number="1" ActsOn="1">Chase Selection</Channel>
+  <Channel Number="2" ActsOn="2">Variable speed (slow-fast)</Channel>
+  <Channel Number="3" ActsOn="3">Strobe (slow-fast)</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

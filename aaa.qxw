@@ -8,21 +8,10 @@
  </Creator>
  <Engine>
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="None" Line="0">
-     <PluginParameters UniverseChannels="421"/>
-    </Output>
-   </Universe>
+   <Universe Name="Universe 1" ID="0"/>
    <Universe Name="Universe 2" ID="1"/>
-   <Universe Name="Universe 3" ID="2">
-    <Input Plugin="OS2L" UID="OS2L line" Line="0" Profile="Virtual DJ">
-     <PluginParameters hostAddress="192.168.178.122" hostPort="9996"/>
-    </Input>
-   </Universe>
-   <Universe Name="Universe 4" ID="3">
-    <Input Plugin="MIDI" UID="None" Line="0"/>
-    <Output Plugin="MIDI" UID="None" Line="1"/>
-   </Universe>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
    <Universe Name="Universe 5" ID="4"/>
   </InputOutputMap>
   <Fixture>
