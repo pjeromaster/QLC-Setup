@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Manufacturer>Proxy</Manufacturer>
+ <Model>VirtualDJ</Model>
+ <Type>OS2L</Type>
+ <Channel Number="1">
+  <Name>cmd1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="2">
+  <Name>cmd2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="3">
+  <Name>cmd3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="4">
+  <Name>cmd4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="8341">
+  <Name>beat</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="18663">
+  <Name>strobe</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="56387">
+  <Name>blackout</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="58492">
+  <Name>fog</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="64559">
+  <Name>next</Name>
+  <Type>Button</Type>
+ </Channel>
+</InputProfile>
