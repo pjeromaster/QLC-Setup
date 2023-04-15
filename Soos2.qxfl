@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureList>
+<FixtureList xmlns="http://www.qlcplus.org/FixtureList">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>LED Par 56</Model>
+  <Mode>6 Channel</Mode>
+  <ID>0</ID>
+  <Name>RB</Name>
+  <Universe>0</Universe>
+  <Address>127</Address>
+  <Channels>6</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Ayra</Manufacturer>
+  <Model>TDC CROSS</Model>
+  <Mode>4 Channel DMX</Mode>
+  <ID>1</ID>
+  <Name>TDC CROSS</Name>
+  <Universe>0</Universe>
+  <Address>271</Address>
+  <Channels>4</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>American DJ</Manufacturer>
+  <Model>Dekker LED</Model>
+  <Mode>DMX 8CH</Mode>
+  <ID>2</ID>
+  <Name>Dekker LED</Name>
+  <Universe>0</Universe>
+  <Address>239</Address>
+  <Channels>8</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Generic</Manufacturer>
+  <Model>Generic</Model>
+  <Mode>1 Channel</Mode>
+  <ID>3</ID>
+  <Name>BeatOUT</Name>
+  <Universe>5</Universe>
+  <Address>0</Address>
+  <Channels>1</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Generic</Manufacturer>
+  <Model>Generic RGB</Model>
+  <Mode>RGB</Mode>
+  <ID>4</ID>
+  <Name>Even</Name>
+  <Universe>5</Universe>
+  <Address>5</Address>
+  <Channels>3</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Generic</Manufacturer>
+  <Model>Generic RGB</Model>
+  <Mode>RGB</Mode>
+  <ID>5</ID>
+  <Name>Odd</Name>
+  <Universe>5</Universe>
+  <Address>8</Address>
+  <Channels>3</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>LED Par 56</Model>
+  <Mode>6 Channel</Mode>
+  <ID>6</ID>
+  <Name>LB</Name>
+  <Universe>0</Universe>
+  <Address>191</Address>
+  <Channels>6</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Generic</Manufacturer>
+  <Model>Generic</Model>
+  <Mode>1 Channel</Mode>
+  <ID>7</ID>
+  <Name>EVEN</Name>
+  <Universe>5</Universe>
+  <Address>1</Address>
+  <Channels>1</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Generic</Manufacturer>
+  <Model>Generic</Model>
+  <Mode>1 Channel</Mode>
+  <ID>8</ID>
+  <Name>ODD</Name>
+  <Universe>5</Universe>
+  <Address>2</Address>
+  <Channels>1</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>LED Par 56</Model>
+  <Mode>6 Channel</Mode>
+  <ID>13</ID>
+  <Name>LF</Name>
+  <Universe>0</Universe>
+  <Address>383</Address>
+  <Channels>6</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>LED Par 56</Model>
+  <Mode>6 Channel</Mode>
+  <ID>14</ID>
+  <Name>MF</Name>
+  <Universe>0</Universe>
+  <Address>399</Address>
+  <Channels>6</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>LED Par 56</Model>
+  <Mode>6 Channel</Mode>
+  <ID>15</ID>
+  <Name>RF</Name>
+  <Universe>0</Universe>
+  <Address>415</Address>
+  <Channels>6</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Laserworld</Manufacturer>
+  <Model>EL-230RGB</Model>
+  <Mode>DMX</Mode>
+  <ID>16</ID>
+  <Name>EL-230RGB</Name>
+  <Universe>0</Universe>
+  <Address>223</Address>
+  <Channels>12</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>American DJ</Manufacturer>
+  <Model>Mini Dekker</Model>
+  <Mode>9 Channel</Mode>
+  <ID>17</ID>
+  <Name>Mini Dekker</Name>
+  <Universe>0</Universe>
+  <Address>77</Address>
+  <Channels>9</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Showtec</Manufacturer>
+  <Model>MultiDim MK III DMX</Model>
+  <Mode>4 Channel</Mode>
+  <ID>18</ID>
+  <Name>MultiDim MK III DMX</Name>
+  <Universe>0</Universe>
+  <Address>175</Address>
+  <Channels>4</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>Stairville</Manufacturer>
+  <Model>maTrixx SC-100</Model>
+  <Mode>4-Channel Mode</Mode>
+  <ID>19</ID>
+  <Name>maTrixx SC-100</Name>
+  <Universe>0</Universe>
+  <Address>207</Address>
+  <Channels>4</Channels>
+ </Fixture>
+ <Fixture>
+  <Manufacturer>American DJ</Manufacturer>
+  <Model>SP-1500 MKII</Model>
+  <Mode>Default</Mode>
+  <ID>20</ID>
+  <Name>SP-1500 MKII</Name>
+  <Universe>0</Universe>
+  <Address>287</Address>
+  <Channels>2</Channels>
+ </Fixture>
+ <FixtureGroup ID="0">
+  <Name>Pars</Name>
+  <Size X="3" Y="2"/>
+  <Head X="0" Y="0" Fixture="6">0</Head>
+  <Head X="2" Y="0" Fixture="0">0</Head>
+  <Head X="0" Y="1" Fixture="13">0</Head>
+  <Head X="1" Y="1" Fixture="14">0</Head>
+  <Head X="2" Y="1" Fixture="15">0</Head>
+ </FixtureGroup>
+</FixtureList>

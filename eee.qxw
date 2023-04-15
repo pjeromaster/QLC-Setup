@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Fixtures" ID="0"/>
+   <Universe Name="LoopBack OUT" ID="1">
+    <Output Plugin="Loopback" UID="Loopback 1" Line="0">
+     <PluginParameters UniverseChannels="6"/>
+    </Output>
+   </Universe>
+   <Universe Name="LoopBack IN" ID="2">
+    <Input Plugin="Loopback" UID="Loopback 1" Line="0"/>
+   </Universe>
+   <Universe Name="OS2l" ID="3">
+    <Input Plugin="OS2L" UID="OS2L line" Line="0" Profile="Proxy VirtualDJ">
+     <PluginParameters MIDISendNoteOff="true" hostAddress="127.0.0.1" hostPort="9996"/>
+    </Input>
+   </Universe>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>0</ID>
+   <Name>BR</Name>
+   <Universe>0</Universe>
+   <Address>127</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>1</ID>
+   <Name>Even RGB</Name>
+   <Universe>1</Universe>
+   <Address>0</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic RGB</Model>
+   <Mode>RGB</Mode>
+   <ID>2</ID>
+   <Name>Odd RGB</Name>
+   <Universe>1</Universe>
+   <Address>3</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>6</ID>
+   <Name>BL</Name>
+   <Universe>0</Universe>
+   <Address>191</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>9</ID>
+   <Name>FL</Name>
+   <Universe>0</Universe>
+   <Address>383</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>10</ID>
+   <Name>FM</Name>
+   <Universe>0</Universe>
+   <Address>399</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>LED Par 56</Model>
+   <Mode>6 Channel</Mode>
+   <ID>11</ID>
+   <Name>FR</Name>
+   <Universe>0</Universe>
+   <Address>415</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Laserworld</Manufacturer>
+   <Model>EL-230RGB</Model>
+   <Mode>DMX</Mode>
+   <ID>12</ID>
+   <Name>Laser</Name>
+   <Universe>0</Universe>
+   <Address>223</Address>
+   <Channels>12</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>MultiDim MK III DMX</Model>
+   <Mode>4 Channel</Mode>
+   <ID>14</ID>
+   <Name>Dimmer</Name>
+   <Universe>0</Universe>
+   <Address>175</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Stairville</Manufacturer>
+   <Model>maTrixx SC-100</Model>
+   <Mode>4-Channel Mode</Mode>
+   <ID>15</ID>
+   <Name>Matrix</Name>
+   <Universe>0</Universe>
+   <Address>207</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>American DJ</Manufacturer>
+   <Model>SP-1500 MKII</Model>
+   <Mode>Default</Mode>
+   <ID>16</ID>
+   <Name>Strobe</Name>
+   <Universe>0</Universe>
+   <Address>287</Address>
+   <Channels>2</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Pars</Name>
+   <Size X="3" Y="2"/>
+   <Head X="0" Y="0" Fixture="6">0</Head>
+   <Head X="2" Y="0" Fixture="0">0</Head>
+   <Head X="0" Y="1" Fixture="9">0</Head>
+   <Head X="1" Y="1" Fixture="10">0</Head>
+   <Head X="2" Y="1" Fixture="11">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>ODD</Name>
+   <Size X="3" Y="1"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="6">0</Head>
+   <Head X="2" Y="0" Fixture="10">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>EVEN</Name>
+   <Size X="2" Y="2"/>
+   <Head X="0" Y="0" Fixture="9">0</Head>
+   <Head X="1" Y="0" Fixture="11">0</Head>
+  </FixtureGroup>
+  <ChannelsGroup ID="0" Name="Par Mode" Value="0">0,5,6,5,9,5,10,5,11,5</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Odd R" Value="0" InputUniverse="2" InputChannel="3">0,0,6,0,10,0</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="Odd G" Value="0" InputUniverse="2" InputChannel="4">0,1,6,1,10,1</ChannelsGroup>
+  <ChannelsGroup ID="3" Name="Odd B" Value="0" InputUniverse="2" InputChannel="5">0,2,6,2,10,2</ChannelsGroup>
+  <Function ID="0" Type="Scene" Name="Discobal">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="14">0,255</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Scene" Name="Auto" Path="Laser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,175</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Scene" Name="DMX" Path="Laser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,250</FixtureVal>
+  </Function>
+  <Function ID="3" Type="Scene" Name="OFF" Path="Laser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,0</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Sound" Path="Laser">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">0,100</FixtureVal>
+  </Function>
+  <Function ID="5" Type="Scene" Name="DMX" Path="Par">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,0</ChannelGroupsVal>
+   <FixtureVal ID="0">5,0</FixtureVal>
+   <FixtureVal ID="6">5,0</FixtureVal>
+   <FixtureVal ID="9">5,0</FixtureVal>
+   <FixtureVal ID="10">5,0</FixtureVal>
+   <FixtureVal ID="11">5,0</FixtureVal>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Sound" Path="Par">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,200</ChannelGroupsVal>
+   <FixtureVal ID="0">5,200</FixtureVal>
+   <FixtureVal ID="6">5,200</FixtureVal>
+   <FixtureVal ID="9">5,200</FixtureVal>
+   <FixtureVal ID="10">5,200</FixtureVal>
+   <FixtureVal ID="11">5,200</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Scene" Name="Nieuwe scene 7">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6"/>
+   <FixtureVal ID="0"/>
+   <FixtureVal ID="10"/>
+  </Function>
+  <Function ID="8" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Sequence" Name="Nieuwe sequence 9" BoundScene="8">
+   <Speed FadeIn="1000" FadeOut="2000" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:0,255</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:1,255</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:2,255</Step>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="2" Height="3" Depth="2" Units="0"/>
+   <FxItem ID="0" XPos="1777.42" YPos="-3.17344"/>
+   <FxItem ID="6" XPos="6.31579" YPos="-2.10526"/>
+   <FxItem ID="9" XPos="0" YPos="1789.03"/>
+   <FxItem ID="10" XPos="898.674" YPos="1779.56"/>
+   <FxItem ID="11" XPos="1768.99" YPos="1776.37"/>
+   <FxItem ID="12" XPos="1235.79" YPos="2.10526"/>
+   <FxItem ID="14" XPos="620.839" YPos="2.11415"/>
+   <FxItem ID="15" XPos="156.429" YPos="-65.2543" Rotation="60"/>
+   <FxItem ID="16" XPos="-148.75" YPos="924.31" Rotation="90"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
