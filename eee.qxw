@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.6</Version>
   <Author>pjero</Author>
  </Creator>
- <Engine>
+ <Engine Autostart="24">
   <InputOutputMap>
    <Universe Name="Fixtures" ID="0"/>
    <Universe Name="LoopBack OUT" ID="1">
     <Output Plugin="Loopback" UID="Loopback 1" Line="0">
-     <PluginParameters UniverseChannels="6"/>
+     <PluginParameters UniverseChannels="12"/>
     </Output>
    </Universe>
    <Universe Name="LoopBack IN" ID="2">
@@ -35,23 +35,13 @@
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGB</Model>
-   <Mode>RGB</Mode>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
    <ID>1</ID>
-   <Name>Even RGB</Name>
+   <Name>BPM</Name>
    <Universe>1</Universe>
    <Address>0</Address>
-   <Channels>3</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic RGB</Model>
-   <Mode>RGB</Mode>
-   <ID>2</ID>
-   <Name>Odd RGB</Name>
-   <Universe>1</Universe>
-   <Address>3</Address>
-   <Channels>3</Channels>
+   <Channels>1</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Showtec</Manufacturer>
@@ -142,23 +132,7 @@
    <Head X="1" Y="1" Fixture="10">0</Head>
    <Head X="2" Y="1" Fixture="11">0</Head>
   </FixtureGroup>
-  <FixtureGroup ID="1">
-   <Name>ODD</Name>
-   <Size X="3" Y="1"/>
-   <Head X="0" Y="0" Fixture="0">0</Head>
-   <Head X="1" Y="0" Fixture="6">0</Head>
-   <Head X="2" Y="0" Fixture="10">0</Head>
-  </FixtureGroup>
-  <FixtureGroup ID="2">
-   <Name>EVEN</Name>
-   <Size X="2" Y="2"/>
-   <Head X="0" Y="0" Fixture="9">0</Head>
-   <Head X="1" Y="0" Fixture="11">0</Head>
-  </FixtureGroup>
   <ChannelsGroup ID="0" Name="Par Mode" Value="0">0,5,6,5,9,5,10,5,11,5</ChannelsGroup>
-  <ChannelsGroup ID="1" Name="Odd R" Value="0" InputUniverse="2" InputChannel="3">0,0,6,0,10,0</ChannelsGroup>
-  <ChannelsGroup ID="2" Name="Odd G" Value="0" InputUniverse="2" InputChannel="4">0,1,6,1,10,1</ChannelsGroup>
-  <ChannelsGroup ID="3" Name="Odd B" Value="0" InputUniverse="2" InputChannel="5">0,2,6,2,10,2</ChannelsGroup>
   <Function ID="0" Type="Scene" Name="Discobal">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="14">0,255</FixtureVal>
@@ -197,15 +171,8 @@
    <FixtureVal ID="10">5,200</FixtureVal>
    <FixtureVal ID="11">5,200</FixtureVal>
   </Function>
-  <Function ID="7" Type="Scene" Name="Nieuwe scene 7">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="6"/>
-   <FixtureVal ID="0"/>
-   <FixtureVal ID="10"/>
-  </Function>
   <Function ID="8" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="9" Type="Sequence" Name="Nieuwe sequence 9" BoundScene="8">
    <Speed FadeIn="1000" FadeOut="2000" Duration="2000"/>
@@ -215,6 +182,53 @@
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:0,255</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:1,255</Step>
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="3">2:2,255</Step>
+  </Function>
+  <Function ID="19" Type="RGBMatrix" Name="Nieuwe RGB Matrix 19">
+   <Speed FadeIn="57" FadeOut="230" Duration="460"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <MonoColor>4294936576</MonoColor>
+   <EndColor>4294901794</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="4"/>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
+  </Function>
+  <Function ID="20" Type="RGBMatrix" Name="Pars">
+   <Speed FadeIn="117" FadeOut="109" Duration="403"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Opposite</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <EndColor>4278190335</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="orientation" Value="Vertical"/>
+  </Function>
+  <Function ID="21" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Sequence" Name="BPM Pulse" BoundScene="21">
+   <Speed FadeIn="0" FadeOut="0" Duration="457"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">1:0,255</Step>
+  </Function>
+  <Function ID="24" Type="Collection" Name="Startup">
+   <Step Number="0">22</Step>
+  </Function>
+  <Function ID="26" Type="Scene" Name="Nieuwe scene 26">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="6">0,255</FixtureVal>
+   <FixtureVal ID="0">0,255</FixtureVal>
+   <FixtureVal ID="9">0,255</FixtureVal>
+   <FixtureVal ID="10">0,255</FixtureVal>
+   <FixtureVal ID="11">0,255</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -237,10 +251,269 @@
    <Appearance>
     <FrameStyle>None</FrameStyle>
     <ForegroundColor>Default</ForegroundColor>
-    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundColor>4278190080</BackgroundColor>
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
+   <Clock Type="Clock" Caption="" ID="0">
+    <WindowState Visible="True" X="0" Y="0" Width="135" Height="45"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>MS Shell Dlg 2,-1,28,5,75,0,0,0,0,0</Font>
+    </Appearance>
+   </Clock>
+   <AudioTriggers BarsNumber="6" Caption="" ID="1">
+    <WindowState Visible="True" X="0" Y="45" Width="135" Height="275"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SpectrumBar Name="#1 (0Hz - 833Hz)" Type="1" MinThreshold="51" MaxThreshold="204" Divisor="1" Index="0"/>
+   </AudioTriggers>
+   <Matrix Caption="Nieuwe RGB Matrix 19" ID="2">
+    <WindowState Visible="True" X="530" Y="30" Width="590" Height="295"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="19" InstantApply="true"/>
+    <Control ID="8">
+     <Type>StartColor</Type>
+     <Color>#ff0000</Color>
+    </Control>
+    <Control ID="14">
+     <Type>StartColor</Type>
+     <Color>#ff8800</Color>
+    </Control>
+    <Control ID="15">
+     <Type>StartColor</Type>
+     <Color>#eeff00</Color>
+    </Control>
+    <Control ID="16">
+     <Type>StartColor</Type>
+     <Color>#66ff00</Color>
+    </Control>
+    <Control ID="18">
+     <Type>StartColor</Type>
+     <Color>#00ff22</Color>
+    </Control>
+    <Control ID="19">
+     <Type>StartColor</Type>
+     <Color>#00ffaa</Color>
+    </Control>
+    <Control ID="20">
+     <Type>StartColor</Type>
+     <Color>#00ccff</Color>
+    </Control>
+    <Control ID="21">
+     <Type>StartColor</Type>
+     <Color>#0044ff</Color>
+    </Control>
+    <Control ID="22">
+     <Type>StartColor</Type>
+     <Color>#4400ff</Color>
+    </Control>
+    <Control ID="23">
+     <Type>StartColor</Type>
+     <Color>#cc00ff</Color>
+    </Control>
+    <Control ID="24">
+     <Type>StartColor</Type>
+     <Color>#ff00aa</Color>
+    </Control>
+    <Control ID="25">
+     <Type>StartColor</Type>
+     <Color>#ff0022</Color>
+    </Control>
+    <Control ID="26">
+     <Type>EndColor</Type>
+     <Color>#ff0000</Color>
+    </Control>
+    <Control ID="27">
+     <Type>EndColor</Type>
+     <Color>#ff8800</Color>
+    </Control>
+    <Control ID="28">
+     <Type>EndColor</Type>
+     <Color>#eeff00</Color>
+    </Control>
+    <Control ID="29">
+     <Type>EndColor</Type>
+     <Color>#66ff00</Color>
+    </Control>
+    <Control ID="31">
+     <Type>EndColor</Type>
+     <Color>#00ff22</Color>
+    </Control>
+    <Control ID="32">
+     <Type>EndColor</Type>
+     <Color>#00ffaa</Color>
+    </Control>
+    <Control ID="33">
+     <Type>EndColor</Type>
+     <Color>#00ccff</Color>
+    </Control>
+    <Control ID="34">
+     <Type>EndColor</Type>
+     <Color>#0044ff</Color>
+    </Control>
+    <Control ID="35">
+     <Type>EndColor</Type>
+     <Color>#4400ff</Color>
+    </Control>
+    <Control ID="36">
+     <Type>EndColor</Type>
+     <Color>#cc00ff</Color>
+    </Control>
+    <Control ID="39">
+     <Type>EndColor</Type>
+     <Color>#ff00aa</Color>
+    </Control>
+    <Control ID="40">
+     <Type>EndColor</Type>
+     <Color>#ff0022</Color>
+    </Control>
+    <Control ID="43">
+     <Type>Animation</Type>
+     <Resource>Even/Odd</Resource>
+    </Control>
+    <Control ID="57">
+     <Type>Animation</Type>
+     <Resource>Gradient</Resource>
+     <Property Name="presetSize">4</Property>
+     <Property Name="orientation">Horizontal</Property>
+     <Property Name="presetIndex">Rainbow</Property>
+    </Control>
+   </Matrix>
+   <SpeedDial Caption="Duur" ID="3">
+    <WindowState Visible="True" X="1190" Y="345" Width="385" Height="210"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>127</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Time>457</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">22</Function>
+   </SpeedDial>
+   <SpeedDial Caption="Fade-in" ID="5">
+    <WindowState Visible="True" X="665" Y="445" Width="210" Height="70"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65536</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Tap>
+     <Input Universe="2" Channel="0"/>
+    </Tap>
+    <Time>913</Time>
+    <Function FadeIn="6" FadeOut="0" Duration="0">20</Function>
+   </SpeedDial>
+   <SpeedDial Caption="Fade-out" ID="6">
+    <WindowState Visible="True" X="665" Y="590" Width="210" Height="80"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65536</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Tap>
+     <Input Universe="2" Channel="0"/>
+    </Tap>
+    <Time>913</Time>
+    <Function FadeIn="0" FadeOut="6" Duration="0">20</Function>
+   </SpeedDial>
+   <SpeedDial Caption="Duration" ID="7">
+    <WindowState Visible="True" X="665" Y="515" Width="210" Height="75"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>65536</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Tap>
+     <Input Universe="2" Channel="0"/>
+    </Tap>
+    <Time>913</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">20</Function>
+   </SpeedDial>
+   <CueList Caption="Cue list" ID="8">
+    <WindowState Visible="True" X="205" Y="100" Width="300" Height="220"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>4294967295</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next/>
+    <Previous/>
+    <Playback/>
+    <Stop/>
+   </CueList>
+   <Matrix Caption="Pars" ID="9">
+    <WindowState Visible="True" X="345" Y="395" Width="285" Height="185"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="20" InstantApply="true"/>
+   </Matrix>
+   <Slider Caption="Slider 10" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="120" Y="470" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>26</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="Pars" ID="11" Icon="">
+    <WindowState Visible="True" X="265" Y="660" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="20"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
