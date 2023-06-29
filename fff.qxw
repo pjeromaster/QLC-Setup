@@ -8,7 +8,9 @@
  </Creator>
  <Engine Autostart="32">
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
+   </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="OS2l" ID="3">
@@ -23,7 +25,7 @@
    </Universe>
    <Universe Name="Loopback1OUT" ID="5">
     <Output Plugin="Loopback" UID="Loopback 1" Line="0">
-     <PluginParameters UniverseChannels="11"/>
+     <PluginParameters UniverseChannels="1"/>
     </Output>
    </Universe>
   </InputOutputMap>
@@ -147,6 +149,7 @@
    <Universe>0</Universe>
    <Address>207</Address>
    <Channels>4</Channels>
+   <Modifier Channel="1" Name="Linear"/>
   </Fixture>
   <Fixture>
    <Manufacturer>American DJ</Manufacturer>
@@ -157,6 +160,8 @@
    <Universe>0</Universe>
    <Address>287</Address>
    <Channels>2</Channels>
+   <Modifier Channel="0" Name="Logarithmic Medium"/>
+   <Modifier Channel="1" Name="Logarithmic Medium"/>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Pars</Name>
@@ -174,32 +179,27 @@
   <ChannelsGroup ID="4" Name="Even GREEN" Value="0">13,1,15,1</ChannelsGroup>
   <ChannelsGroup ID="5" Name="Even Blue" Value="0">13,2,15,2</ChannelsGroup>
   <Function ID="0" Type="Chaser" Name="Random Matrix Chase">
-   <Speed FadeIn="0" FadeOut="0" Duration="10042"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10230"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">81</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">82</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">83</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">90</Step>
-   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">84</Step>
-   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">85</Step>
-   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">86</Step>
-   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">87</Step>
-   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">88</Step>
-   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">89</Step>
-   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">91</Step>
-   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">92</Step>
-   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">93</Step>
-   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">94</Step>
-   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">95</Step>
+   <Step Number="0" FadeIn="0" Hold="230" FadeOut="0">96</Step>
+   <Step Number="1" FadeIn="0" Hold="230" FadeOut="0">97</Step>
+   <Step Number="2" FadeIn="0" Hold="230" FadeOut="0">98</Step>
+   <Step Number="3" FadeIn="0" Hold="230" FadeOut="0">99</Step>
+   <Step Number="4" FadeIn="0" Hold="230" FadeOut="0">100</Step>
+   <Step Number="5" FadeIn="0" Hold="230" FadeOut="0">101</Step>
+   <Step Number="6" FadeIn="0" Hold="230" FadeOut="0">102</Step>
+   <Step Number="7" FadeIn="0" Hold="230" FadeOut="0">103</Step>
+   <Step Number="8" FadeIn="0" Hold="230" FadeOut="0">104</Step>
+   <Step Number="9" FadeIn="0" Hold="230" FadeOut="0">105</Step>
   </Function>
   <Function ID="1" Type="Scene" Name="Ball">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="18">0,255</FixtureVal>
   </Function>
   <Function ID="2" Type="Chaser" Name="Random Matrix Pattern/Chase">
-   <Speed FadeIn="0" FadeOut="0" Duration="10042"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10230"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -242,19 +242,19 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
-   <Width>127</Width>
-   <Height>127</Height>
+   <Width>50</Width>
+   <Height>60</Height>
    <Rotation>0</Rotation>
    <StartOffset>0</StartOffset>
    <IsRelative>0</IsRelative>
    <Axis Name="X">
-    <Offset>127</Offset>
-    <Frequency>1</Frequency>
+    <Offset>100</Offset>
+    <Frequency>2</Frequency>
     <Phase>90</Phase>
    </Axis>
    <Axis Name="Y">
-    <Offset>127</Offset>
-    <Frequency>5</Frequency>
+    <Offset>80</Offset>
+    <Frequency>3</Frequency>
     <Phase>0</Phase>
    </Axis>
   </Function>
@@ -729,12 +729,23 @@
    <Step Number="0">41</Step>
    <Step Number="1">69</Step>
   </Function>
+  <Function ID="35" Type="RGBMatrix" Name="Nieuwe RGB Matrix 35">
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+   <Property Name="presetSize" Value="10"/>
+   <Property Name="orientation" Value="Vertical"/>
+  </Function>
   <Function ID="40" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="370" Duration="370"/>
    <FixtureVal ID="3">0,0</FixtureVal>
   </Function>
   <Function ID="41" Type="Sequence" Name="beat" BoundScene="40">
-   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="235"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -781,7 +792,7 @@
    <FixtureVal ID="16">0,250</FixtureVal>
   </Function>
   <Function ID="75" Type="RGBMatrix" Name="RC" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -789,12 +800,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="76" Type="RGBMatrix" Name="RB" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="100" FadeOut="100" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -802,8 +813,8 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Blue"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Blue"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="77" Type="Scene" Name="Pat0">
@@ -927,7 +938,7 @@
    <FixtureVal ID="19">2,250</FixtureVal>
   </Function>
   <Function ID="106" Type="Chaser" Name="Random Matrix Pattern">
-   <Speed FadeIn="0" FadeOut="0" Duration="10042"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10230"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -948,7 +959,7 @@
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">95</Step>
   </Function>
   <Function ID="107" Type="RGBMatrix" Name="RY" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -956,12 +967,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="108" Type="RGBMatrix" Name="RM" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -969,12 +980,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="109" Type="RGBMatrix" Name="RG" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -982,12 +993,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="128" Type="RGBMatrix" Name="BC" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="1000" FadeOut="1000" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -995,12 +1006,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="BG" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1008,12 +1019,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="130" Type="RGBMatrix" Name="BM" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1021,12 +1032,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="131" Type="RGBMatrix" Name="BY" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1034,12 +1045,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Blue"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="132" Type="RGBMatrix" Name="CG" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1047,12 +1058,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Cyan"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="133" Type="RGBMatrix" Name="CM" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1060,12 +1071,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Cyan"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="134" Type="RGBMatrix" Name="CY" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1073,12 +1084,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Cyan"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="135" Type="RGBMatrix" Name="GM" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1086,12 +1097,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Green"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="136" Type="RGBMatrix" Name="GY" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="400" FadeOut="100" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1099,12 +1110,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Green"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="137" Type="RGBMatrix" Name="MY" Path="Pars">
-   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="471"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1112,15 +1123,15 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Magenta"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
   </Function>
   <Function ID="138" Type="Chaser" Name="Nieuwe chaser 138">
-   <Speed FadeIn="0" FadeOut="0" Duration="10000"/>
+   <Speed FadeIn="235" FadeOut="235" Duration="942"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">128</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">129</Step>
    <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">130</Step>
@@ -1173,12 +1184,12 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="5" Y="5" Width="650" Height="695"/>
+    <WindowState Visible="True" X="5" Y="5" Width="800" Height="760"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Frame Caption="" ID="223">
      <Appearance>
@@ -1188,13 +1199,13 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="105" Y="50" Width="545" Height="440"/>
+     <WindowState Visible="True" X="165" Y="45" Width="545" Height="440"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
-     <Disabled>True</Disabled>
+     <Disabled>False</Disabled>
      <SoloFrame Caption="" ID="226">
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
@@ -1210,7 +1221,7 @@
       <ShowEnableButton>True</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>True</Disabled>
+      <Disabled>False</Disabled>
       <Button Caption="RB" ID="228" Icon="">
        <WindowState Visible="True" X="0" Y="0" Width="40" Height="40"/>
        <Appearance>
@@ -1437,8 +1448,8 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>10000</Time>
-      <Function FadeIn="0" FadeOut="0" Duration="6">138</Function>
+      <Time>471</Time>
+      <Function FadeIn="5" FadeOut="5" Duration="7">138</Function>
      </SpeedDial>
      <SpeedDial Caption="Fade-IN" ID="24">
       <WindowState Visible="True" X="0" Y="235" Width="205" Height="65"/>
@@ -1454,8 +1465,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>728</Time>
-      <Function FadeIn="6" FadeOut="0" Duration="0">44</Function>
+      <Time>471</Time>
      </SpeedDial>
      <SpeedDial Caption="Fade-OUT" ID="26">
       <WindowState Visible="True" X="0" Y="370" Width="205" Height="70"/>
@@ -1471,8 +1481,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>728</Time>
-      <Function FadeIn="0" FadeOut="6" Duration="0">44</Function>
+      <Time>471</Time>
      </SpeedDial>
      <SpeedDial Caption="Duur" ID="25">
       <WindowState Visible="True" X="0" Y="300" Width="205" Height="70"/>
@@ -1488,7 +1497,22 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>728</Time>
+      <Time>471</Time>
+      <Function FadeIn="0" FadeOut="0" Duration="6">107</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">108</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">109</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">75</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">76</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">137</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">136</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">135</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">134</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">133</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">132</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">131</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">130</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">129</Function>
+      <Function FadeIn="0" FadeOut="0" Duration="6">128</Function>
      </SpeedDial>
      <Slider Caption="SubMaster" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
       <WindowState Visible="True" X="470" Y="35" Width="75" Height="405"/>
@@ -1579,7 +1603,7 @@
       <ShowEnableButton>False</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>True</Disabled>
+      <Disabled>False</Disabled>
       <Button Caption="[R]" ID="133" Icon="">
        <WindowState Visible="True" X="0" Y="35" Width="60" Height="60"/>
        <Appearance>
@@ -1680,7 +1704,7 @@
       <ShowEnableButton>False</ShowEnableButton>
       <Mixing>False</Mixing>
       <Collapsed>False</Collapsed>
-      <Disabled>True</Disabled>
+      <Disabled>False</Disabled>
       <Button Caption="[Q]" ID="125" Icon="">
        <WindowState Visible="True" X="0" Y="35" Width="60" Height="60"/>
        <Appearance>
@@ -1832,7 +1856,7 @@
     <Tap>
      <Input Universe="3" Channel="8341"/>
     </Tap>
-    <Time>729</Time>
+    <Time>471</Time>
     <Key>Space</Key>
     <Function FadeIn="0" FadeOut="0" Duration="5">41</Function>
    </SpeedDial>
@@ -1892,7 +1916,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="255"/>
+     <Level LowLimit="0" HighLimit="255" Value="150"/>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
@@ -1914,7 +1938,7 @@
     <Collapsed>True</Collapsed>
     <Disabled>False</Disabled>
     <XYPad Caption="Position" ID="157" InvertedAppearance="0">
-     <WindowState Visible="True" X="215" Y="40" Width="225" Height="230"/>
+     <WindowState Visible="True" X="215" Y="40" Width="230" Height="260"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1926,8 +1950,21 @@
       <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
       <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Window hMin="0" hMax="256" vMin="0" vMax="168"/>
+     <Pan Position="131"/>
+     <Tilt Position="52"/>
+     <Preset ID="16">
+      <Type>Position</Type>
+      <Name>Center</Name>
+      <X>131.813</X>
+      <Y>52.8926</Y>
+     </Preset>
+     <Preset ID="17">
+      <Type>Position</Type>
+      <Name>Podium</Name>
+      <X>158.868</X>
+      <Y>14.9724</Y>
+     </Preset>
     </XYPad>
     <SoloFrame Caption="Patterns &amp; Chases" ID="185">
      <Appearance>
@@ -2285,7 +2322,7 @@
      </Button>
     </SoloFrame>
     <Slider Caption="Strobe" ID="214" WidgetStyle="Knob" InvertedAppearance="false">
-     <WindowState Visible="True" X="210" Y="505" Width="225" Height="150"/>
+     <WindowState Visible="True" X="295" Y="525" Width="150" Height="135"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
@@ -2294,7 +2331,7 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Percentage" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="8" HighLimit="249" Value="249">
+     <Level LowLimit="8" HighLimit="249" Value="8">
       <Channel Fixture="19">3</Channel>
      </Level>
      <Playback>
@@ -2381,7 +2418,7 @@
      </Appearance>
      <Visibility>39</Visibility>
      <AbsoluteValue Minimum="0" Maximum="60000"/>
-     <Time>10042</Time>
+     <Time>10230</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">2</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">106</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">0</Function>
@@ -2394,7 +2431,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="215" Y="275" Width="220" Height="180"/>
+     <WindowState Visible="True" X="220" Y="300" Width="220" Height="180"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -2573,7 +2610,7 @@
      </Button>
     </SoloFrame>
     <Button Caption="Random Movement" ID="148" Icon="">
-     <WindowState Visible="True" X="215" Y="460" Width="220" Height="40"/>
+     <WindowState Visible="True" X="225" Y="480" Width="220" Height="40"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>4294967295</ForegroundColor>
@@ -2599,7 +2636,7 @@
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <SoloFrame Caption="" ID="143">
      <Appearance>
@@ -2687,8 +2724,8 @@
       <Axis ID="X" LowLimit="0" HighLimit="1" Reverse="False"/>
       <Axis ID="Y" LowLimit="0" HighLimit="1" Reverse="False"/>
      </Fixture>
-     <Pan Position="0"/>
-     <Tilt Position="0"/>
+     <Pan Position="209"/>
+     <Tilt Position="212"/>
     </XYPad>
     <Frame Caption="" ID="151">
      <Appearance>
@@ -2815,29 +2852,13 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="255">
       <Channel Fixture="16">1</Channel>
      </Level>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
     </Slider>
-   </Frame>
-   <Frame Caption="AutoStrobe" ID="8">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="1235" Y="80" Width="535" Height="530"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
    </Frame>
   </Frame>
   <Properties>
