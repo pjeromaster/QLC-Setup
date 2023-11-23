@@ -27,7 +27,7 @@
  </Channel>
  <Channel Number="8341">
   <Name>beat</Name>
-  <Type>Button</Type>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="18663">
   <Name>strobe</Name>
