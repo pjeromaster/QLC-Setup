@@ -11,19 +11,19 @@
  <Type>OS2L</Type>
  <Channel Number="1">
   <Name>cmd1</Name>
-  <Type>Button</Type>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="2">
   <Name>cmd2</Name>
-  <Type>Button</Type>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="3">
   <Name>cmd3</Name>
-  <Type>Button</Type>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="4">
   <Name>cmd4</Name>
-  <Type>Button</Type>
+  <Type>Slider</Type>
  </Channel>
  <Channel Number="8341">
   <Name>beat</Name>

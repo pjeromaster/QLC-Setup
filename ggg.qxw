@@ -25,7 +25,7 @@
    </Universe>
    <Universe Name="Loopback1OUT" ID="5">
     <Output Plugin="Loopback" UID="Loopback 1" Line="0">
-     <PluginParameters UniverseChannels="2"/>
+     <PluginParameters UniverseChannels="3"/>
     </Output>
    </Universe>
   </InputOutputMap>
@@ -78,6 +78,16 @@
    <Name>Par Sequence</Name>
    <Universe>5</Universe>
    <Address>1</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>5</ID>
+   <Name>ParBrightness</Name>
+   <Universe>5</Universe>
+   <Address>2</Address>
    <Channels>1</Channels>
   </Fixture>
   <Fixture>
@@ -745,7 +755,7 @@
    <FixtureVal ID="16">1,0</FixtureVal>
   </Function>
   <Function ID="34" Type="Sequence" Name="parBeat" BoundScene="36">
-   <Speed FadeIn="0" FadeOut="0" Duration="4656"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="19232"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -760,8 +770,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="10"/>
    <Property Name="orientation" Value="Vertical"/>
+   <Property Name="presetSize" Value="10"/>
   </Function>
   <Function ID="36" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="370" Duration="370"/>
@@ -775,13 +785,23 @@
    <Step Number="0" FadeIn="10000" Hold="0" FadeOut="10000" Values="1"/>
    <Step Number="1" FadeIn="10000" Hold="0" FadeOut="10000" Values="1">16:1,255</Step>
   </Function>
-  <Function ID="38" Type="RGBMatrix" Name="Par Alternating">
-   <Speed FadeIn="50" FadeOut="50" Duration="400"/>
+  <Function ID="38" Type="RGBMatrix" Name="Par Alt A">
+   <Speed FadeIn="37" FadeOut="37" Duration="601"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Checkers</Algorithm>
-   <MonoColor>4283018614</MonoColor>
-   <EndColor>4294945535</EndColor>
+   <MonoColor>4294918623</MonoColor>
+   <EndColor>4278238801</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="39" Type="RGBMatrix" Name="Par Alt B">
+   <Speed FadeIn="37" FadeOut="37" Duration="601"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Checkers</Algorithm>
+   <MonoColor>4294967040</MonoColor>
+   <EndColor>4278190335</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
@@ -791,7 +811,7 @@
    <FixtureVal ID="4">0,0</FixtureVal>
   </Function>
   <Function ID="41" Type="Sequence" Name="beat" BoundScene="40">
-   <Speed FadeIn="0" FadeOut="0" Duration="146"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="300"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -865,6 +885,36 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="2">6,243</FixtureVal>
   </Function>
+  <Function ID="56" Type="RGBMatrix" Name="Par Alt C">
+   <Speed FadeIn="37" FadeOut="37" Duration="601"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Checkers</Algorithm>
+   <MonoColor>4278255360</MonoColor>
+   <EndColor>4294902015</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="57" Type="RGBMatrix" Name="Par Alt D">
+   <Speed FadeIn="37" FadeOut="37" Duration="601"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Checkers</Algorithm>
+   <MonoColor>4294967040</MonoColor>
+   <EndColor>4294901760</EndColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
+  </Function>
+  <Function ID="58" Type="Chaser" Name="Nieuwe chaser 58">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Random</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">38</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">39</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">56</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">57</Step>
+  </Function>
   <Function ID="69" Type="Scene" Name="RGB Control" Path="Par Control">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="6">5,0</FixtureVal>
@@ -898,7 +948,7 @@
    <FixtureVal ID="16">0,250</FixtureVal>
   </Function>
   <Function ID="75" Type="RGBMatrix" Name="RC" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -906,12 +956,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="76" Type="RGBMatrix" Name="RB" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -919,9 +969,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Blue"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="80" Type="Scene" Name="Blackout" Path="Matrix Patterns">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1049,7 +1099,7 @@
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">95</Step>
   </Function>
   <Function ID="107" Type="RGBMatrix" Name="RY" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1057,12 +1107,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="108" Type="RGBMatrix" Name="RM" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1070,12 +1120,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="109" Type="RGBMatrix" Name="RG" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1083,12 +1133,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Red"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="128" Type="RGBMatrix" Name="BC" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1096,12 +1146,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
    <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="BG" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1109,12 +1159,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="130" Type="RGBMatrix" Name="BM" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1122,12 +1172,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
    <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="131" Type="RGBMatrix" Name="BY" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1135,12 +1185,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Blue"/>
    <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="132" Type="RGBMatrix" Name="CG" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1148,12 +1198,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Cyan"/>
    <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="133" Type="RGBMatrix" Name="CM" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1161,12 +1211,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Cyan"/>
    <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="134" Type="RGBMatrix" Name="CY" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1174,12 +1224,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Cyan"/>
    <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="135" Type="RGBMatrix" Name="GM" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1187,12 +1237,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Green"/>
    <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="136" Type="RGBMatrix" Name="GY" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1200,12 +1250,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Green"/>
    <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="137" Type="RGBMatrix" Name="MY" Path="Pars">
-   <Speed FadeIn="18" FadeOut="72" Duration="291"/>
+   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1213,9 +1263,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color1Index" Value="Magenta"/>
    <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color1Index" Value="Magenta"/>
   </Function>
   <Function ID="138" Type="Chaser" Name="Nieuwe chaser 138">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -1279,7 +1329,7 @@
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
+    <Collapsed>True</Collapsed>
     <Disabled>False</Disabled>
     <Frame Caption="" ID="223">
      <Appearance>
@@ -1296,29 +1346,6 @@
      <ShowEnableButton>True</ShowEnableButton>
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
-     <SpeedDial Caption="Next Pattern" ID="263">
-      <WindowState Visible="True" X="0" Y="355" Width="210" Height="150"/>
-      <Appearance>
-       <FrameStyle>Sunken</FrameStyle>
-       <ForegroundColor>4294967295</ForegroundColor>
-       <BackgroundColor>4280953390</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Visibility>65636</Visibility>
-      <AbsoluteValue Minimum="0" Maximum="10000"/>
-      <Tap>
-       <Input Universe="4" Channel="0"/>
-      </Tap>
-      <Mult>
-       <Input Universe="3" Channel="4"/>
-      </Mult>
-      <Div>
-       <Input Universe="3" Channel="3"/>
-      </Div>
-      <Time>390</Time>
-      <Function FadeIn="0" FadeOut="0" Duration="8">34</Function>
-     </SpeedDial>
      <SpeedDial Caption="Fade-IN" ID="24">
       <WindowState Visible="True" X="10" Y="45" Width="240" Height="80"/>
       <Appearance>
@@ -1333,7 +1360,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>390</Time>
+      <Time>599</Time>
       <Function FadeIn="6" FadeOut="0" Duration="0">107</Function>
       <Function FadeIn="6" FadeOut="0" Duration="0">108</Function>
       <Function FadeIn="6" FadeOut="0" Duration="0">109</Function>
@@ -1364,7 +1391,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>390</Time>
+      <Time>599</Time>
       <Function FadeIn="0" FadeOut="6" Duration="0">107</Function>
       <Function FadeIn="0" FadeOut="6" Duration="0">108</Function>
       <Function FadeIn="0" FadeOut="6" Duration="0">109</Function>
@@ -1401,7 +1428,7 @@
       <Div>
        <Input Universe="3" Channel="1"/>
       </Div>
-      <Time>390</Time>
+      <Time>599</Time>
       <Function FadeIn="0" FadeOut="0" Duration="6">107</Function>
       <Function FadeIn="0" FadeOut="0" Duration="6">108</Function>
       <Function FadeIn="0" FadeOut="0" Duration="6">109</Function>
@@ -1419,7 +1446,7 @@
       <Function FadeIn="0" FadeOut="0" Duration="6">128</Function>
      </SpeedDial>
      <CueList Caption="Cue list" ID="262">
-      <WindowState Visible="True" X="255" Y="45" Width="105" Height="335"/>
+      <WindowState Visible="True" X="250" Y="45" Width="105" Height="335"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1452,29 +1479,6 @@
        <Function>4294967295</Function>
       </Playback>
      </Slider>
-     <SpeedDial Caption="Next Pattern" ID="263">
-      <WindowState Visible="True" X="10" Y="300" Width="240" Height="80"/>
-      <Appearance>
-       <FrameStyle>Sunken</FrameStyle>
-       <ForegroundColor>4294967295</ForegroundColor>
-       <BackgroundColor>4280953390</BackgroundColor>
-       <BackgroundImage>None</BackgroundImage>
-       <Font>Default</Font>
-      </Appearance>
-      <Visibility>65536</Visibility>
-      <AbsoluteValue Minimum="0" Maximum="10000"/>
-      <Tap>
-       <Input Universe="4" Channel="0"/>
-      </Tap>
-      <Mult>
-       <Input Universe="3" Channel="4"/>
-      </Mult>
-      <Div>
-       <Input Universe="3" Channel="3"/>
-      </Div>
-      <Time>291</Time>
-      <Function FadeIn="0" FadeOut="0" Duration="6">34</Function>
-     </SpeedDial>
     </Frame>
     <Frame Caption="" ID="6">
      <Appearance>
@@ -1796,7 +1800,7 @@
     <Tap>
      <Input Universe="3" Channel="8341"/>
     </Tap>
-    <Time>400</Time>
+    <Time>601</Time>
     <Key>Space</Key>
     <Function FadeIn="0" FadeOut="0" Duration="5">41</Function>
    </SpeedDial>
@@ -2471,15 +2475,15 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="340" Y="400" Width="930" Height="340"/>
+    <WindowState Visible="True" X="520" Y="155" Width="785" Height="430"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Matrix Caption="Par Alternating" ID="17">
-     <WindowState Visible="True" X="160" Y="50" Width="250" Height="245"/>
+    <Matrix Caption="Par Alt A" ID="17">
+     <WindowState Visible="True" X="5" Y="40" Width="100" Height="345"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2489,33 +2493,57 @@
      </Appearance>
      <Function ID="38" InstantApply="true"/>
      <Visibility>14</Visibility>
-     <Control ID="1">
+     <Control ID="11">
       <Type>StartColor</Type>
-      <Color>#49ad76</Color>
+      <Color>#ff0000</Color>
      </Control>
-     <Control ID="2">
+     <Control ID="12">
+      <Type>EndColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="15">
       <Type>StartColor</Type>
-      <Color>#ffaaff</Color>
+      <Color>#00ff00</Color>
      </Control>
-     <Control ID="3">
+     <Control ID="16">
+      <Type>EndColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="17">
       <Type>StartColor</Type>
-      <Color>#aaffff</Color>
+      <Color>#0000ff</Color>
      </Control>
-     <Control ID="8">
+     <Control ID="18">
       <Type>EndColor</Type>
-      <Color>#49ad76</Color>
+      <Color>#0000ff</Color>
      </Control>
-     <Control ID="9">
-      <Type>EndColor</Type>
-      <Color>#ffaaff</Color>
+     <Control ID="19">
+      <Type>StartColor</Type>
+      <Color>#00ffff</Color>
      </Control>
-     <Control ID="10">
+     <Control ID="20">
       <Type>EndColor</Type>
-      <Color>#aaffff</Color>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="21">
+      <Type>StartColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="22">
+      <Type>EndColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="23">
+      <Type>StartColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+     <Control ID="24">
+      <Type>EndColor</Type>
+      <Color>#ffff00</Color>
      </Control>
     </Matrix>
     <SpeedDial Caption="Fade-IN" ID="18">
-     <WindowState Visible="True" X="685" Y="35" Width="215" Height="75"/>
+     <WindowState Visible="True" X="550" Y="40" Width="220" Height="80"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2528,12 +2556,15 @@
      <Tap>
       <Input Universe="3" Channel="8341"/>
      </Tap>
-     <Time>400</Time>
+     <Time>601</Time>
      <Key>Space</Key>
+     <Function FadeIn="6" FadeOut="0" Duration="0">57</Function>
+     <Function FadeIn="6" FadeOut="0" Duration="0">56</Function>
+     <Function FadeIn="6" FadeOut="0" Duration="0">39</Function>
      <Function FadeIn="6" FadeOut="0" Duration="0">38</Function>
     </SpeedDial>
     <SpeedDial Caption="Fade-OUT" ID="19">
-     <WindowState Visible="True" X="685" Y="185" Width="215" Height="75"/>
+     <WindowState Visible="True" X="550" Y="200" Width="220" Height="80"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2546,12 +2577,15 @@
      <Tap>
       <Input Universe="3" Channel="8341"/>
      </Tap>
-     <Time>400</Time>
+     <Time>601</Time>
      <Key>Space</Key>
+     <Function FadeIn="0" FadeOut="6" Duration="0">57</Function>
+     <Function FadeIn="0" FadeOut="6" Duration="0">56</Function>
+     <Function FadeIn="0" FadeOut="6" Duration="0">39</Function>
      <Function FadeIn="0" FadeOut="6" Duration="0">38</Function>
     </SpeedDial>
     <SpeedDial Caption="Duur" ID="20">
-     <WindowState Visible="True" X="685" Y="110" Width="215" Height="75"/>
+     <WindowState Visible="True" X="550" Y="120" Width="220" Height="80"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2564,12 +2598,231 @@
      <Tap>
       <Input Universe="3" Channel="8341"/>
      </Tap>
-     <Time>400</Time>
+     <Time>601</Time>
      <Key>Space</Key>
+     <Function FadeIn="0" FadeOut="0" Duration="6">57</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">56</Function>
+     <Function FadeIn="0" FadeOut="0" Duration="6">39</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">38</Function>
     </SpeedDial>
-    <Slider Caption="Brightness" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="0" Y="35" Width="60" Height="200"/>
+    <SpeedDial Caption="Next Pattern" ID="30">
+     <WindowState Visible="True" X="550" Y="280" Width="220" Height="80"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4294967295</ForegroundColor>
+      <BackgroundColor>4280953390</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>65536</Visibility>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Tap>
+      <Input Universe="3" Channel="8341"/>
+     </Tap>
+     <Time>601</Time>
+     <Key>Space</Key>
+     <Function FadeIn="0" FadeOut="0" Duration="6">34</Function>
+    </SpeedDial>
+    <Matrix Caption="Par Alt B" ID="23">
+     <WindowState Visible="True" X="110" Y="40" Width="100" Height="345"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4280953390</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="39" InstantApply="true"/>
+     <Visibility>14</Visibility>
+     <Control ID="11">
+      <Type>StartColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="12">
+      <Type>EndColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="15">
+      <Type>StartColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="16">
+      <Type>EndColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="17">
+      <Type>StartColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="18">
+      <Type>EndColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="19">
+      <Type>StartColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="20">
+      <Type>EndColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="21">
+      <Type>StartColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="22">
+      <Type>EndColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="23">
+      <Type>StartColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+     <Control ID="24">
+      <Type>EndColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+    </Matrix>
+    <Matrix Caption="Par Alt C" ID="31">
+     <WindowState Visible="True" X="215" Y="40" Width="100" Height="345"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4280953390</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="56" InstantApply="true"/>
+     <Visibility>14</Visibility>
+     <Control ID="11">
+      <Type>StartColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="12">
+      <Type>EndColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="15">
+      <Type>StartColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="16">
+      <Type>EndColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="17">
+      <Type>StartColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="18">
+      <Type>EndColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="19">
+      <Type>StartColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="20">
+      <Type>EndColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="21">
+      <Type>StartColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="22">
+      <Type>EndColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="23">
+      <Type>StartColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+     <Control ID="24">
+      <Type>EndColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+    </Matrix>
+    <Matrix Caption="Par Alt D" ID="34">
+     <WindowState Visible="True" X="320" Y="40" Width="100" Height="345"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4280953390</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="57" InstantApply="true"/>
+     <Visibility>14</Visibility>
+     <Control ID="11">
+      <Type>StartColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="12">
+      <Type>EndColor</Type>
+      <Color>#ff0000</Color>
+     </Control>
+     <Control ID="15">
+      <Type>StartColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="16">
+      <Type>EndColor</Type>
+      <Color>#00ff00</Color>
+     </Control>
+     <Control ID="17">
+      <Type>StartColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="18">
+      <Type>EndColor</Type>
+      <Color>#0000ff</Color>
+     </Control>
+     <Control ID="19">
+      <Type>StartColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="20">
+      <Type>EndColor</Type>
+      <Color>#00ffff</Color>
+     </Control>
+     <Control ID="21">
+      <Type>StartColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="22">
+      <Type>EndColor</Type>
+      <Color>#ff00ff</Color>
+     </Control>
+     <Control ID="23">
+      <Type>StartColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+     <Control ID="24">
+      <Type>EndColor</Type>
+      <Color>#ffff00</Color>
+     </Control>
+    </Matrix>
+    <CueList Caption="Cue list" ID="29">
+     <WindowState Visible="True" X="420" Y="40" Width="130" Height="195"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4280953390</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Chaser>58</Chaser>
+     <NextPrevBehavior>3</NextPrevBehavior>
+     <Next>
+      <Input Universe="4" Channel="1"/>
+     </Next>
+     <Previous/>
+     <Playback/>
+     <Stop/>
+    </CueList>
+    <Slider Caption="Brightness" ID="40" WidgetStyle="Knob" InvertedAppearance="false">
+     <WindowState Visible="True" X="420" Y="235" Width="130" Height="180"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2578,11 +2831,63 @@
       <Font>Default</Font>
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="255"/>
+     <Level LowLimit="0" HighLimit="255" Value="157"/>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
     </Slider>
+    <Button Caption="Par Alt A" ID="41" Icon="">
+     <WindowState Visible="True" X="5" Y="385" Width="100" Height="30"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="38"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Par Alt B" ID="47" Icon="">
+     <WindowState Visible="True" X="110" Y="385" Width="100" Height="30"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="39"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Par Alt C" ID="48" Icon="">
+     <WindowState Visible="True" X="215" Y="385" Width="100" Height="30"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="56"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Par Alt D" ID="50" Icon="">
+     <WindowState Visible="True" X="320" Y="385" Width="100" Height="30"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="57"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
    </Frame>
   </Frame>
   <Properties>
