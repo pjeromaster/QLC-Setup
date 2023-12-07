@@ -948,7 +948,7 @@
    <FixtureVal ID="16">0,250</FixtureVal>
   </Function>
   <Function ID="75" Type="RGBMatrix" Name="RC" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -956,12 +956,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="76" Type="RGBMatrix" Name="RB" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -969,8 +969,8 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Blue"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Blue"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="80" Type="Scene" Name="Blackout" Path="Matrix Patterns">
@@ -1099,7 +1099,7 @@
    <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">95</Step>
   </Function>
   <Function ID="107" Type="RGBMatrix" Name="RY" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1107,12 +1107,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="108" Type="RGBMatrix" Name="RM" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1120,12 +1120,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="109" Type="RGBMatrix" Name="RG" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1133,12 +1133,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Red"/>
   </Function>
   <Function ID="128" Type="RGBMatrix" Name="BC" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1146,12 +1146,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="BG" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1159,12 +1159,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="130" Type="RGBMatrix" Name="BM" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1172,12 +1172,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="131" Type="RGBMatrix" Name="BY" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1185,12 +1185,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Blue"/>
   </Function>
   <Function ID="132" Type="RGBMatrix" Name="CG" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1198,12 +1198,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="133" Type="RGBMatrix" Name="CM" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1211,12 +1211,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="134" Type="RGBMatrix" Name="CY" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1224,12 +1224,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Cyan"/>
   </Function>
   <Function ID="135" Type="RGBMatrix" Name="GM" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1237,12 +1237,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="136" Type="RGBMatrix" Name="GY" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1250,12 +1250,12 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Green"/>
   </Function>
   <Function ID="137" Type="RGBMatrix" Name="MY" Path="Pars">
-   <Speed FadeIn="599" FadeOut="599" Duration="0"/>
+   <Speed FadeIn="600" FadeOut="600" Duration="600"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Alternate</Algorithm>
@@ -1263,8 +1263,8 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="color1Index" Value="Magenta"/>
   </Function>
   <Function ID="138" Type="Chaser" Name="Nieuwe chaser 138">
@@ -1324,7 +1324,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="835" Y="20" Width="590" Height="760"/>
+    <WindowState Visible="True" X="1530" Y="390" Width="590" Height="760"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1360,7 +1360,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>599</Time>
+      <Time>600</Time>
       <Function FadeIn="6" FadeOut="0" Duration="0">107</Function>
       <Function FadeIn="6" FadeOut="0" Duration="0">108</Function>
       <Function FadeIn="6" FadeOut="0" Duration="0">109</Function>
@@ -1391,7 +1391,7 @@
       <Tap>
        <Input Universe="4" Channel="0"/>
       </Tap>
-      <Time>599</Time>
+      <Time>600</Time>
       <Function FadeIn="0" FadeOut="6" Duration="0">107</Function>
       <Function FadeIn="0" FadeOut="6" Duration="0">108</Function>
       <Function FadeIn="0" FadeOut="6" Duration="0">109</Function>
@@ -1428,7 +1428,7 @@
       <Div>
        <Input Universe="3" Channel="1"/>
       </Div>
-      <Time>599</Time>
+      <Time>600</Time>
       <Function FadeIn="0" FadeOut="0" Duration="6">107</Function>
       <Function FadeIn="0" FadeOut="0" Duration="6">108</Function>
       <Function FadeIn="0" FadeOut="0" Duration="6">109</Function>
@@ -1772,7 +1772,7 @@
     </Slider>
    </Frame>
    <Button Caption="" ID="4" Icon="">
-    <WindowState Visible="True" X="1460" Y="390" Width="65" Height="70"/>
+    <WindowState Visible="True" X="1095" Y="0" Width="65" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1812,12 +1812,12 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1350" Y="0" Width="160" Height="285"/>
+    <WindowState Visible="True" X="865" Y="0" Width="160" Height="285"/>
     <AllowChildren>False</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="On [/]" ID="56" Icon="">
      <WindowState Visible="True" X="5" Y="225" Width="150" Height="55"/>
@@ -1875,7 +1875,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1350" Y="390" Width="100" Height="160"/>
+    <WindowState Visible="True" X="1755" Y="730" Width="100" Height="160"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1924,7 +1924,7 @@
     </Label>
    </Frame>
    <Button Caption="" ID="1" Icon="">
-    <WindowState Visible="True" X="1455" Y="465" Width="70" Height="70"/>
+    <WindowState Visible="True" X="1025" Y="0" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>Raised</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1946,12 +1946,12 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="60" Y="415" Width="270" Height="405"/>
+    <WindowState Visible="True" X="265" Y="405" Width="270" Height="405"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Slider Caption="Brightness" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
      <WindowState Visible="True" X="5" Y="40" Width="80" Height="195"/>
@@ -2086,7 +2086,7 @@
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Slider Caption="Brightness" ID="63" WidgetStyle="Slider" InvertedAppearance="false">
      <WindowState Visible="True" X="5" Y="40" Width="80" Height="195"/>
@@ -2248,12 +2248,12 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="55" Y="375" Width="210" Height="435"/>
+    <WindowState Visible="True" X="655" Y="0" Width="210" Height="435"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <XYPad Caption="Position" ID="157" InvertedAppearance="0">
      <WindowState Visible="True" X="5" Y="205" Width="200" Height="225"/>
@@ -2332,7 +2332,7 @@
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <XYPad Caption="Positioning" ID="149" InvertedAppearance="0">
      <WindowState Visible="True" X="5" Y="370" Width="250" Height="245"/>
@@ -2374,7 +2374,7 @@
      </Appearance>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
      <Reset/>
-     <Level LowLimit="0" HighLimit="255" Value="50">
+     <Level LowLimit="0" HighLimit="255" Value="114">
       <Channel Fixture="16">1</Channel>
      </Level>
      <Playback>
@@ -2475,7 +2475,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="520" Y="155" Width="785" Height="430"/>
+    <WindowState Visible="True" X="545" Y="435" Width="785" Height="430"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
