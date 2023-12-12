@@ -29,7 +29,6 @@ var testAlgo;
                     i++;
                 }
             }
-
             return map;
         };
 
