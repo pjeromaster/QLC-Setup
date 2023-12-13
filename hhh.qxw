@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.6</Version>
+  <Version>4.12.7</Version>
   <Author>pjero</Author>
  </Creator>
  <Engine Autostart="32">
@@ -780,8 +780,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
-   <Property Name="presetSize" Value="8"/>
    <Property Name="orientation" Value="Vertical"/>
+   <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="36" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="370" Duration="370"/>
@@ -916,16 +916,6 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
   </Function>
-  <Function ID="58" Type="Chaser" Name="Nieuwe chaser 58">
-   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Random</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">38</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">39</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">56</Step>
-   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">57</Step>
-  </Function>
   <Function ID="59" Type="Scene" Name="ParPat A" Path="Par Patterns">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="7">0,255,1,0,2,0,3,0</FixtureVal>
@@ -1013,9 +1003,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Cyan"/>
   </Function>
   <Function ID="76" Type="RGBMatrix" Name="RB" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1026,9 +1016,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Blue"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Blue"/>
   </Function>
   <Function ID="80" Type="Scene" Name="Blackout" Path="Matrix Patterns">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1164,9 +1154,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Yellow"/>
   </Function>
   <Function ID="108" Type="RGBMatrix" Name="RM" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1177,9 +1167,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Magenta"/>
   </Function>
   <Function ID="109" Type="RGBMatrix" Name="RG" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1190,9 +1180,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Red"/>
-   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="128" Type="RGBMatrix" Name="BC" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1203,9 +1193,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Cyan"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Cyan"/>
   </Function>
   <Function ID="129" Type="RGBMatrix" Name="BG" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1216,9 +1206,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="130" Type="RGBMatrix" Name="BM" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1229,9 +1219,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Magenta"/>
   </Function>
   <Function ID="131" Type="RGBMatrix" Name="BY" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1242,9 +1232,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Blue"/>
-   <Property Name="color2Index" Value="Yellow"/>
   </Function>
   <Function ID="132" Type="RGBMatrix" Name="CG" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1255,9 +1245,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Green"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Cyan"/>
-   <Property Name="color2Index" Value="Green"/>
   </Function>
   <Function ID="133" Type="RGBMatrix" Name="CM" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1268,9 +1258,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Cyan"/>
-   <Property Name="color2Index" Value="Magenta"/>
   </Function>
   <Function ID="134" Type="RGBMatrix" Name="CY" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1281,9 +1271,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Cyan"/>
-   <Property Name="color2Index" Value="Yellow"/>
   </Function>
   <Function ID="135" Type="RGBMatrix" Name="GM" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1294,9 +1284,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Magenta"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Green"/>
-   <Property Name="color2Index" Value="Magenta"/>
   </Function>
   <Function ID="136" Type="RGBMatrix" Name="GY" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1307,9 +1297,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Green"/>
-   <Property Name="color2Index" Value="Yellow"/>
   </Function>
   <Function ID="137" Type="RGBMatrix" Name="MY" Path="Pars">
    <Speed FadeIn="477" FadeOut="477" Duration="477"/>
@@ -1320,9 +1310,9 @@
    <EndColor>4294967040</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="color2Index" Value="Yellow"/>
    <Property Name="orientation" Value="Interleaved"/>
    <Property Name="color1Index" Value="Magenta"/>
-   <Property Name="color2Index" Value="Yellow"/>
   </Function>
   <Function ID="138" Type="Chaser" Name="Nieuwe chaser 138">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -1381,7 +1371,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="False" X="0" Y="0" Width="1875" Height="965"/>
+    <WindowState Visible="True" X="0" Y="0" Width="1875" Height="965"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>False</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -1396,7 +1386,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="0" Y="0" Width="270" Height="405"/>
+     <WindowState Visible="True" X="0" Y="0" Width="270" Height="405"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1404,7 +1394,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Brightness" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="40" Width="80" Height="195"/>
+      <WindowState Visible="True" X="5" Y="40" Width="80" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1421,7 +1411,7 @@
       </Playback>
      </Slider>
      <Slider Caption="B" ID="42" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="135" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="135" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1438,7 +1428,7 @@
       </Playback>
      </Slider>
      <Slider Caption="G" ID="43" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="70" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="70" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1455,7 +1445,7 @@
       </Playback>
      </Slider>
      <Slider Caption="R" ID="44" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="5" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1472,7 +1462,7 @@
       </Playback>
      </Slider>
      <Slider Caption="W" ID="45" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="200" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="200" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1489,7 +1479,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Speed" ID="46" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="80" Y="40" Width="60" Height="195"/>
+      <WindowState Visible="True" X="80" Y="40" Width="60" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1506,7 +1496,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Pattern" ID="49" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="140" Y="40" Width="125" Height="195"/>
+      <WindowState Visible="True" X="140" Y="40" Width="125" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1531,7 +1521,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="665" Y="0" Width="430" Height="405"/>
+     <WindowState Visible="True" X="665" Y="0" Width="430" Height="405"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1539,7 +1529,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <XYPad Caption="Positioning" ID="149" InvertedAppearance="0">
-      <WindowState Visible="False" X="145" Y="40" Width="280" Height="250"/>
+      <WindowState Visible="True" X="145" Y="40" Width="280" Height="250"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1555,7 +1545,7 @@
       <Tilt Position="125"/>
      </XYPad>
      <Button Caption="Laser Pattern Cycle" ID="155" Icon="">
-      <WindowState Visible="False" X="5" Y="350" Width="70" Height="50"/>
+      <WindowState Visible="True" X="5" Y="350" Width="70" Height="50"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1568,7 +1558,7 @@
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Slider Caption="Pattern" ID="22" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="40" Width="70" Height="310"/>
+      <WindowState Visible="True" X="5" Y="40" Width="70" Height="310"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1586,7 +1576,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Rotate X" ID="152" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="215" Y="290" Width="70" Height="110"/>
+      <WindowState Visible="True" X="215" Y="290" Width="70" Height="110"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1603,7 +1593,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Rotate Y" ID="153" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="285" Y="290" Width="70" Height="110"/>
+      <WindowState Visible="True" X="285" Y="290" Width="70" Height="110"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1620,7 +1610,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Rotate Z" ID="154" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="355" Y="290" Width="70" Height="110"/>
+      <WindowState Visible="True" X="355" Y="290" Width="70" Height="110"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1637,7 +1627,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Speed" ID="0" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="145" Y="290" Width="70" Height="110"/>
+      <WindowState Visible="True" X="145" Y="290" Width="70" Height="110"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1654,7 +1644,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Zoom" ID="5" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="75" Y="290" Width="70" Height="110"/>
+      <WindowState Visible="True" X="75" Y="290" Width="70" Height="110"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1671,7 +1661,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Mode" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="75" Y="40" Width="70" Height="250"/>
+      <WindowState Visible="True" X="75" Y="40" Width="70" Height="250"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1696,7 +1686,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="270" Y="0" Width="395" Height="405"/>
+     <WindowState Visible="True" X="270" Y="0" Width="395" Height="405"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1704,7 +1694,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="Brightness" ID="63" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="40" Width="80" Height="195"/>
+      <WindowState Visible="True" X="5" Y="40" Width="80" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1721,7 +1711,7 @@
       </Playback>
      </Slider>
      <Slider Caption="B" ID="64" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="135" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="135" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1738,7 +1728,7 @@
       </Playback>
      </Slider>
      <Slider Caption="G" ID="65" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="70" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="70" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1755,7 +1745,7 @@
       </Playback>
      </Slider>
      <Slider Caption="R" ID="66" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="5" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1772,7 +1762,7 @@
       </Playback>
      </Slider>
      <Slider Caption="W" ID="67" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="200" Y="235" Width="65" Height="165"/>
+      <WindowState Visible="True" X="200" Y="235" Width="65" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1789,7 +1779,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Speed" ID="68" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="100" Y="40" Width="60" Height="195"/>
+      <WindowState Visible="True" X="100" Y="40" Width="60" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1807,7 +1797,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Color Mode" ID="69" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="260" Y="35" Width="65" Height="365"/>
+      <WindowState Visible="True" X="260" Y="35" Width="65" Height="365"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1824,7 +1814,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Strobe" ID="72" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="160" Y="40" Width="60" Height="195"/>
+      <WindowState Visible="True" X="160" Y="40" Width="60" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1841,7 +1831,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Show Mode" ID="73" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="330" Y="35" Width="60" Height="365"/>
+      <WindowState Visible="True" X="330" Y="35" Width="60" Height="365"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1866,7 +1856,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="1095" Y="0" Width="370" Height="405"/>
+     <WindowState Visible="True" X="1095" Y="0" Width="370" Height="405"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1874,7 +1864,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <XYPad Caption="Position" ID="157" InvertedAppearance="0">
-      <WindowState Visible="False" X="90" Y="40" Width="275" Height="360"/>
+      <WindowState Visible="True" X="90" Y="40" Width="275" Height="360"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1903,7 +1893,7 @@
       </Preset>
      </XYPad>
      <Slider Caption="Strobe" ID="214" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="205" Width="85" Height="195"/>
+      <WindowState Visible="True" X="5" Y="205" Width="85" Height="195"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1920,7 +1910,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Pattern" ID="70" WidgetStyle="Knob" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="40" Width="85" Height="165"/>
+      <WindowState Visible="True" X="5" Y="40" Width="85" Height="165"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -1945,7 +1935,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="1465" Y="0" Width="160" Height="405"/>
+     <WindowState Visible="True" X="1465" Y="0" Width="160" Height="405"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1953,7 +1943,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Button Caption="On [/]" ID="56" Icon="">
-      <WindowState Visible="False" X="5" Y="345" Width="150" Height="55"/>
+      <WindowState Visible="True" X="5" Y="345" Width="150" Height="55"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1968,7 +1958,7 @@
       <Input Universe="3" Channel="18663"/>
      </Button>
      <Slider Caption="Speed" ID="57" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="75" Y="40" Width="80" Height="305"/>
+      <WindowState Visible="True" X="75" Y="40" Width="80" Height="305"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -1985,7 +1975,7 @@
       </Playback>
      </Slider>
      <Slider Caption="Brightness" ID="58" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="False" X="5" Y="40" Width="75" Height="305"/>
+      <WindowState Visible="True" X="5" Y="40" Width="75" Height="305"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>4294967295</ForegroundColor>
@@ -2001,7 +1991,7 @@
      </Slider>
     </Frame>
     <Button Caption="" ID="1" Icon="">
-     <WindowState Visible="False" X="1490" Y="485" Width="70" Height="70"/>
+     <WindowState Visible="True" X="1490" Y="485" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>Raised</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2016,7 +2006,7 @@
      <Input Universe="3" Channel="56387"/>
     </Button>
     <Button Caption="" ID="4" Icon="">
-     <WindowState Visible="False" X="1420" Y="485" Width="70" Height="70"/>
+     <WindowState Visible="True" X="1420" Y="485" Width="70" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2038,7 +2028,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="1420" Y="555" Width="100" Height="160"/>
+     <WindowState Visible="True" X="1420" Y="555" Width="100" Height="160"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2046,7 +2036,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Label Caption="[B] DiscoBall" ID="8">
-      <WindowState Visible="False" X="0" Y="40" Width="100" Height="30"/>
+      <WindowState Visible="True" X="0" Y="40" Width="100" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2056,7 +2046,7 @@
       </Appearance>
      </Label>
      <Label Caption="[SPACE] BPM" ID="14">
-      <WindowState Visible="False" X="0" Y="70" Width="100" Height="30"/>
+      <WindowState Visible="True" X="0" Y="70" Width="100" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2066,7 +2056,7 @@
       </Appearance>
      </Label>
      <Label Caption="[/] Strobe" ID="15">
-      <WindowState Visible="False" X="0" Y="100" Width="100" Height="30"/>
+      <WindowState Visible="True" X="0" Y="100" Width="100" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2076,7 +2066,7 @@
       </Appearance>
      </Label>
      <Label Caption="[.] Blackout" ID="74">
-      <WindowState Visible="False" X="0" Y="130" Width="100" Height="30"/>
+      <WindowState Visible="True" X="0" Y="130" Width="100" Height="30"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -2094,7 +2084,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="False" X="0" Y="405" Width="935" Height="470"/>
+     <WindowState Visible="True" X="0" Y="405" Width="935" Height="470"/>
      <AllowChildren>True</AllowChildren>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -2109,7 +2099,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <WindowState Visible="False" X="5" Y="40" Width="640" Height="430"/>
+      <WindowState Visible="True" X="5" Y="40" Width="640" Height="430"/>
       <AllowChildren>True</AllowChildren>
       <AllowResize>True</AllowResize>
       <ShowHeader>False</ShowHeader>
@@ -2117,7 +2107,7 @@
       <Collapsed>False</Collapsed>
       <Disabled>False</Disabled>
       <Matrix Caption="Pattern D" ID="34">
-       <WindowState Visible="False" X="415" Y="5" Width="135" Height="420"/>
+       <WindowState Visible="True" X="415" Y="5" Width="135" Height="420"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2187,7 +2177,7 @@
        </Control>
       </Matrix>
       <Matrix Caption="Pattern C" ID="31">
-       <WindowState Visible="False" X="280" Y="5" Width="135" Height="420"/>
+       <WindowState Visible="True" X="280" Y="5" Width="135" Height="420"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2257,7 +2247,7 @@
        </Control>
       </Matrix>
       <Matrix Caption="Pattern B" ID="23">
-       <WindowState Visible="False" X="140" Y="5" Width="140" Height="420"/>
+       <WindowState Visible="True" X="140" Y="5" Width="140" Height="420"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2327,7 +2317,7 @@
        </Control>
       </Matrix>
       <Matrix Caption="Pattern A" ID="17">
-       <WindowState Visible="False" X="5" Y="5" Width="135" Height="420"/>
+       <WindowState Visible="True" X="5" Y="5" Width="135" Height="420"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2397,7 +2387,7 @@
        </Control>
       </Matrix>
       <Slider Caption="Brightness" ID="160" WidgetStyle="Slider" InvertedAppearance="false">
-       <WindowState Visible="False" X="550" Y="5" Width="85" Height="420"/>
+       <WindowState Visible="True" X="550" Y="5" Width="85" Height="420"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -2420,7 +2410,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <WindowState Visible="False" X="645" Y="40" Width="290" Height="430"/>
+      <WindowState Visible="True" X="645" Y="40" Width="290" Height="430"/>
       <AllowChildren>True</AllowChildren>
       <AllowResize>True</AllowResize>
       <ShowHeader>False</ShowHeader>
@@ -2435,7 +2425,7 @@
         <BackgroundImage>None</BackgroundImage>
         <Font>Default</Font>
        </Appearance>
-       <WindowState Visible="False" X="5" Y="45" Width="200" Height="250"/>
+       <WindowState Visible="True" X="5" Y="45" Width="200" Height="250"/>
        <AllowChildren>True</AllowChildren>
        <AllowResize>True</AllowResize>
        <ShowHeader>True</ShowHeader>
@@ -2447,7 +2437,7 @@
        <Shortcut Page="1" Name="Manual"/>
        <PagesLoop>True</PagesLoop>
        <CueList Caption="Cue list" ID="35">
-        <WindowState Visible="False" X="5" Y="40" Width="190" Height="205"/>
+        <WindowState Visible="True" X="5" Y="40" Width="190" Height="205"/>
         <Appearance>
          <FrameStyle>Sunken</FrameStyle>
          <ForegroundColor>Default</ForegroundColor>
@@ -2568,7 +2558,7 @@
         <BackgroundImage>None</BackgroundImage>
         <Font>Default</Font>
        </Appearance>
-       <WindowState Visible="False" X="5" Y="5" Width="205" Height="325"/>
+       <WindowState Visible="True" X="5" Y="5" Width="205" Height="325"/>
        <AllowChildren>True</AllowChildren>
        <AllowResize>True</AllowResize>
        <ShowHeader>True</ShowHeader>
@@ -2576,7 +2566,7 @@
        <Collapsed>True</Collapsed>
        <Disabled>False</Disabled>
        <SpeedDial Caption="Fade-IN" ID="18">
-        <WindowState Visible="False" X="0" Y="40" Width="205" Height="70"/>
+        <WindowState Visible="True" X="0" Y="40" Width="205" Height="70"/>
         <Appearance>
          <FrameStyle>Sunken</FrameStyle>
          <ForegroundColor>Default</ForegroundColor>
@@ -2597,7 +2587,7 @@
         <Function FadeIn="6" FadeOut="0" Duration="0">38</Function>
        </SpeedDial>
        <SpeedDial Caption="Duur" ID="20">
-        <WindowState Visible="False" X="0" Y="180" Width="205" Height="75"/>
+        <WindowState Visible="True" X="0" Y="180" Width="205" Height="75"/>
         <Appearance>
          <FrameStyle>Sunken</FrameStyle>
          <ForegroundColor>Default</ForegroundColor>
@@ -2618,7 +2608,7 @@
         <Function FadeIn="0" FadeOut="0" Duration="6">38</Function>
        </SpeedDial>
        <SpeedDial Caption="Fade-OUT" ID="19">
-        <WindowState Visible="False" X="0" Y="110" Width="205" Height="70"/>
+        <WindowState Visible="True" X="0" Y="110" Width="205" Height="70"/>
         <Appearance>
          <FrameStyle>Sunken</FrameStyle>
          <ForegroundColor>Default</ForegroundColor>
@@ -2639,7 +2629,7 @@
         <Function FadeIn="0" FadeOut="6" Duration="0">38</Function>
        </SpeedDial>
        <SpeedDial Caption="Next Pattern" ID="30">
-        <WindowState Visible="False" X="0" Y="255" Width="205" Height="70"/>
+        <WindowState Visible="True" X="0" Y="255" Width="205" Height="70"/>
         <Appearance>
          <FrameStyle>Sunken</FrameStyle>
          <ForegroundColor>4294967295</ForegroundColor>
@@ -2658,7 +2648,7 @@
        </SpeedDial>
       </Frame>
       <Slider Caption="Strobe" ID="131" WidgetStyle="Slider" InvertedAppearance="false">
-       <WindowState Visible="False" X="210" Y="5" Width="75" Height="370"/>
+       <WindowState Visible="True" X="210" Y="5" Width="75" Height="370"/>
        <Appearance>
         <FrameStyle>Sunken</FrameStyle>
         <ForegroundColor>4294967295</ForegroundColor>
@@ -2686,7 +2676,7 @@
         <BackgroundImage>None</BackgroundImage>
         <Font>Default</Font>
        </Appearance>
-       <WindowState Visible="False" X="5" Y="375" Width="280" Height="50"/>
+       <WindowState Visible="True" X="5" Y="375" Width="280" Height="50"/>
        <AllowChildren>True</AllowChildren>
        <AllowResize>True</AllowResize>
        <ShowHeader>False</ShowHeader>
@@ -2695,7 +2685,7 @@
        <Collapsed>False</Collapsed>
        <Disabled>False</Disabled>
        <Button Caption="DMX Control" ID="7" Icon="">
-        <WindowState Visible="False" X="5" Y="5" Width="85" Height="40"/>
+        <WindowState Visible="True" X="5" Y="5" Width="85" Height="40"/>
         <Appearance>
          <FrameStyle>None</FrameStyle>
          <ForegroundColor>4294967295</ForegroundColor>
@@ -2708,7 +2698,7 @@
         <Intensity Adjust="False">100</Intensity>
        </Button>
        <Button Caption="7 Color Fade" ID="12" Icon="">
-        <WindowState Visible="False" X="155" Y="5" Width="60" Height="40"/>
+        <WindowState Visible="True" X="155" Y="5" Width="60" Height="40"/>
         <Appearance>
          <FrameStyle>None</FrameStyle>
          <ForegroundColor>4294967295</ForegroundColor>
@@ -2721,7 +2711,7 @@
         <Intensity Adjust="False">100</Intensity>
        </Button>
        <Button Caption="7 Color Change" ID="13" Icon="">
-        <WindowState Visible="False" X="215" Y="5" Width="60" Height="40"/>
+        <WindowState Visible="True" X="215" Y="5" Width="60" Height="40"/>
         <Appearance>
          <FrameStyle>None</FrameStyle>
          <ForegroundColor>4294967295</ForegroundColor>
@@ -2734,7 +2724,7 @@
         <Intensity Adjust="False">100</Intensity>
        </Button>
        <Button Caption="Music Controlled" ID="16" Icon="">
-        <WindowState Visible="False" X="95" Y="5" Width="60" Height="40"/>
+        <WindowState Visible="True" X="95" Y="5" Width="60" Height="40"/>
         <Appearance>
          <FrameStyle>None</FrameStyle>
          <ForegroundColor>4294967295</ForegroundColor>
