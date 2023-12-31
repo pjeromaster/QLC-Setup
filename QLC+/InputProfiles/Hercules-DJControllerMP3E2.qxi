@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Manufacturer>Hercules</Manufacturer>
+ <Model>DJ Controller MP3 E2</Model>
+ <Type>MIDI</Type>
+ <MIDISendNoteOff>False</MIDISendNoteOff>
+ <Channel Number="48">
+  <Name>L Jog</Name>
+  <Type>Encoder</Type>
+  <ExtraPress>True</ExtraPress>
+  <Movement Sensitivity="1"/>
+ </Channel>
+ <Channel Number="49">
+  <Name>R Jog</Name>
+  <Type>Encoder</Type>
+  <Movement Sensitivity="1"/>
+ </Channel>
+ <Channel Number="50">
+  <Name>L Pitch</Name>
+  <Type>Encoder</Type>
+  <Movement Sensitivity="1"/>
+ </Channel>
+ <Channel Number="51">
+  <Name>R Pitch</Name>
+  <Type>Encoder</Type>
+  <Movement Sensitivity="1"/>
+ </Channel>
+ <Channel Number="52">
+  <Name>L Fader</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="53">
+  <Name>L High</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="54">
+  <Name>L Mid</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="55">
+  <Name>L Low</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="56">
+  <Name>Crossfader</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="57">
+  <Name>R Fader</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="58">
+  <Name>R High</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="59">
+  <Name>R Mid</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="60">
+  <Name>R Low</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="129">
+  <Name>L 1</Name>
+  <Type>Button</Type>
+  <Feedbacks UpperValue="127"/>
+ </Channel>
+ <Channel Number="130">
+  <Name>L 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="131">
+  <Name>L 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="132">
+  <Name>L 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="133">
+  <Name>L 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="134">
+  <Name>L 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="135">
+  <Name>L 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="136">
+  <Name>L 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="137">
+  <Name>L Shift</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="138">
+  <Name>L -</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="139">
+  <Name>L +</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="140">
+  <Name>L ◀◀</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="141">
+  <Name>L ▶▶</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="142">
+  <Name>L Cue</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="143">
+  <Name>L Play</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="144">
+  <Name>L PFL</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="145">
+  <Name>L Load</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="146">
+  <Name>L Sync</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="147">
+  <Name>L MasterTempo</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="148">
+  <Name>Knop 149</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="149">
+  <Name>R 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="150">
+  <Name>R 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="151">
+  <Name>R 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="152">
+  <Name>R 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="153">
+  <Name>R 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="154">
+  <Name>R 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="155">
+  <Name>R 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="156">
+  <Name>R 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="157">
+  <Name>R Shift</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="158">
+  <Name>R -</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="159">
+  <Name>R +</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="160">
+  <Name>R ◀◀</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="161">
+  <Name>R ▶▶</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="162">
+  <Name>R Cue</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="163">
+  <Name>R Play</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="164">
+  <Name>R PFL</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="165">
+  <Name>R Load</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="166">
+  <Name>R Sync</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="167">
+  <Name>R MasterTempo</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="168">
+  <Name>Knop 169</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="169">
+  <Name>▲</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="170">
+  <Name>▼</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="171">
+  <Name>Files</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="172">
+  <Name>Folder</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="173">
+  <Name>Scratch</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="174">
+  <Name>Automix</Name>
+  <Type>Button</Type>
+ </Channel>
+</InputProfile>
