@@ -9,7 +9,6 @@
  <Manufacturer>Behringer</Manufacturer>
  <Model>LC2412</Model>
  <Type>MIDI</Type>
- <MIDISendNoteOff>False</MIDISendNoteOff>
  <Channel Number="0">
   <Name>A Preset Fader 1</Name>
   <Type>Slider</Type>
@@ -132,7 +131,7 @@
  </Channel>
  <Channel Number="30">
   <Name>Key Step</Name>
-  <Type>Button</Type>
+  <Type>Next Page</Type>
  </Channel>
  <Channel Number="31">
   <Name>Key Flash 1</Name>
@@ -184,7 +183,7 @@
  </Channel>
  <Channel Number="43">
   <Name>Bank</Name>
-  <Type>Knob</Type>
+  <Type>Page Set</Type>
  </Channel>
  <Channel Number="44">
   <Name>Chaser Number</Name>
