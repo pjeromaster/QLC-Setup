@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Manufacturer>Proxy</Manufacturer>
+ <Model>LoopBack 1</Model>
+ <Type>DMX</Type>
+ <Channel Number="0">
+  <Name>Beat</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="1">
+  <Name>Phrase</Name>
+  <Type>Button</Type>
+ </Channel>
+</InputProfile>
