@@ -131,7 +131,7 @@
  </Channel>
  <Channel Number="30">
   <Name>Key Step</Name>
-  <Type>Next Page</Type>
+  <Type>Button</Type>
  </Channel>
  <Channel Number="31">
   <Name>Key Flash 1</Name>
