@@ -73,4 +73,8 @@
   <Name>Master</Name>
   <Type>Slider</Type>
  </Channel>
+ <Channel Number="19">
+  <Name>FilllPulse</Name>
+  <Type>Slider</Type>
+ </Channel>
 </InputProfile>
