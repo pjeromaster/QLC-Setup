@@ -1,0 +1,3 @@
+Run "CreateJunction.bat" om een junction te maken van de QLC+ folder naar C:/Users/{current user}. QLC+ wilt for some reason daar geïnstalleerd staan, maar door een junction te gebruiken kun je de installatie vanuit deze repository gebruiken, dus heb je sws de goeie versie van QLC+, en heb je ook alle fixtures en inputProfiles die je anders elke keer handmatig moet toevoegen. Dit verwijderd wel je huidige QLC+ installatie, dus hou daar rekening mee!
+
+Verder is er nog een dark mode theme, die moet je appart installeren volgens de instructies in de readme's.

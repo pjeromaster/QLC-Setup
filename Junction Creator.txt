@@ -1,1 +1,0 @@
-new-item -itemtype junction -path . -name QLC+ -value "{your path to this repository}\QLC-Setup\QLC+"
