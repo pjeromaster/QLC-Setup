@@ -221,6 +221,7 @@
     <F n="Ayra-ERO-Microspot" m="ERO Micro Spot"/>
     <F n="Ayra-IntenZ-CB-150" m="IntenZ CB-150 "/>
     <F n="Ayra-TDC-Agaricus" m="TDC Agaricus"/>
+	<F n="Ayra-TDC-CROSS" m="TDC CROSS"/>
     <F n="Ayra-TDC-Triple-Burst" m="TDC Triple Burst"/>
     <F n="Ayra-WSM02-WSM03-MKII" m="WSM02/WSM03 MKII"/>
   </M>
@@ -1148,6 +1149,7 @@
     <F n="Laserworld-CS-1000RGB-MkII" m="CS-1000RGB Mk II"/>
     <F n="Laserworld-CS-1000RGB" m="CS-1000RGB"/>
     <F n="Laserworld-EL-200RGY" m="EL-200RGY"/>
+	<F n="Laserworld-EL-230RGB" m="EL-230RGB"/>
     <F n="Laserworld-EL-230RGB-MK2" m="EL-230RGB MK2"/>
     <F n="Laserworld-EL-400RGB-MK2" m="EL-400RGB MK2"/>
     <F n="Laserworld-EL-900RGB" m="EL-900RGB"/>
