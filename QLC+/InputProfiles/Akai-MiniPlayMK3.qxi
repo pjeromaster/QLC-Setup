@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>pjero</Author>
+ </Creator>
+ <Manufacturer>Akai</Manufacturer>
+ <Model>Mini Play MK3</Model>
+ <Type>MIDI</Type>
+ <MIDISendNoteOff>False</MIDISendNoteOff>
+ <Channel Number="68">
+  <Name>Joystick Left Right</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="69">
+  <Name>Joystick Up Down</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="70">
+  <Name>Knob 1A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="71">
+  <Name>Knob 2A</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="72">
+  <Name>Knob 3A</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="73">
+  <Name>Knob 4A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="74">
+  <Name>Knob 1B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="75">
+  <Name>Knob 2B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="76">
+  <Name>Knob 3B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="77">
+  <Name>Slider 4B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="128">
+  <Name>C-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="129">
+  <Name>Slider 130</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="130">
+  <Name>Slider 131</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="131">
+  <Name>Slider 132</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="132">
+  <Name>Slider 133</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="133">
+  <Name>Slider 134</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="134">
+  <Name>Slider 135</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="135">
+  <Name>Slider 136</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="136">
+  <Name>Slider 137</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="137">
+  <Name>Slider 138</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="138">
+  <Name>Slider 139</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="139">
+  <Name>Slider 140</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="140">
+  <Name>C0</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="141">
+  <Name>Slider 142</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="142">
+  <Name>Slider 143</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="143">
+  <Name>Slider 144</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="144">
+  <Name>Slider 145</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="145">
+  <Name>Slider 146</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="146">
+  <Name>Slider 147</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="147">
+  <Name>Slider 148</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="148">
+  <Name>Slider 149</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="149">
+  <Name>Slider 150</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="150">
+  <Name>Slider 151</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="151">
+  <Name>Slider 152</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="152">
+  <Name>C1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="153">
+  <Name>Slider 154</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="154">
+  <Name>Slider 155</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="155">
+  <Name>Slider 156</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="156">
+  <Name>Slider 157</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="157">
+  <Name>Slider 158</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="158">
+  <Name>Slider 159</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="159">
+  <Name>Slider 160</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="160">
+  <Name>Slider 161</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="161">
+  <Name>Slider 162</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="162">
+  <Name>Slider 163</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="163">
+  <Name>Slider 164</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="164">
+  <Name>C2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="165">
+  <Name>Slider 166</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="166">
+  <Name>Slider 167</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="167">
+  <Name>Slider 168</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="168">
+  <Name>Slider 169</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="169">
+  <Name>Slider 170</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="170">
+  <Name>Slider 171</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="171">
+  <Name>Slider 172</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="172">
+  <Name>Slider 173</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="173">
+  <Name>Slider 174</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="174">
+  <Name>Slider 175</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="175">
+  <Name>Slider 176</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="176">
+  <Name>C3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="177">
+  <Name>Slider 178</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="178">
+  <Name>Slider 179</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="179">
+  <Name>Slider 180</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="180">
+  <Name>Slider 181</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="181">
+  <Name>Slider 182</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="182">
+  <Name>Slider 183</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="183">
+  <Name>Slider 184</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="184">
+  <Name>Slider 185</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="185">
+  <Name>Slider 186</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="186">
+  <Name>Slider 187</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="187">
+  <Name>Slider 188</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="188">
+  <Name>C4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="189">
+  <Name>Slider 190</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="190">
+  <Name>Slider 191</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="191">
+  <Name>Slider 192</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="192">
+  <Name>Slider 193</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="193">
+  <Name>Slider 194</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="194">
+  <Name>Slider 195</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="195">
+  <Name>Slider 196</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="196">
+  <Name>Slider 197</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="197">
+  <Name>Slider 198</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="198">
+  <Name>Slider 199</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="199">
+  <Name>Slider 200</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="200">
+  <Name>C5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="201">
+  <Name>Slider 202</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="202">
+  <Name>Slider 203</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="203">
+  <Name>Slider 204</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="204">
+  <Name>Slider 205</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="205">
+  <Name>Slider 206</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="206">
+  <Name>Slider 207</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="207">
+  <Name>Slider 208</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="208">
+  <Name>Slider 209</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="209">
+  <Name>Slider 210</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="210">
+  <Name>Slider 211</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="211">
+  <Name>Slider 212</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="212">
+  <Name>C6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="213">
+  <Name>Slider 214</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="214">
+  <Name>Slider 215</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="215">
+  <Name>Slider 216</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="216">
+  <Name>Slider 217</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="217">
+  <Name>Slider 218</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="218">
+  <Name>Slider 219</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="219">
+  <Name>Slider 220</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="220">
+  <Name>Slider 221</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="221">
+  <Name>Slider 222</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="222">
+  <Name>Slider 223</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="223">
+  <Name>Slider 224</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="224">
+  <Name>C7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="225">
+  <Name>Slider 226</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="226">
+  <Name>Slider 227</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="227">
+  <Name>Slider 228</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="228">
+  <Name>Slider 229</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="229">
+  <Name>Slider 230</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="230">
+  <Name>Slider 231</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="231">
+  <Name>Slider 232</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="232">
+  <Name>Slider 233</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="233">
+  <Name>Slider 234</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="234">
+  <Name>Slider 235</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="235">
+  <Name>Slider 236</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="236">
+  <Name>C8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="237">
+  <Name>Slider 238</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="238">
+  <Name>Slider 239</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="239">
+  <Name>Slider 240</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="240">
+  <Name>Slider 241</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="241">
+  <Name>Slider 242</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="242">
+  <Name>Slider 243</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="243">
+  <Name>Slider 244</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="244">
+  <Name>Slider 245</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="245">
+  <Name>Slider 246</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="246">
+  <Name>Slider 247</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="247">
+  <Name>Slider 248</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="248">
+  <Name>Slider 249</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="513">
+  <Name>Slider 514</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37028">
+  <Name>Pad 1A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37029">
+  <Name>Pad 2A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37030">
+  <Name>Pad 3A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37031">
+  <Name>Pad 4A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37032">
+  <Name>Pad 5A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37033">
+  <Name>Pad 6A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37034">
+  <Name>Pad 7A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37035">
+  <Name>Pad 8A</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37036">
+  <Name>Pad 1B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37037">
+  <Name>Pad 2B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37038">
+  <Name>Pad 3B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37039">
+  <Name>Pad 4B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37040">
+  <Name>Pad 5B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37041">
+  <Name>Pad 6B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37042">
+  <Name>Pad 7B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37043">
+  <Name>Pad 8B</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="37376">
+  <Name>Pad Pressure</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <MidiChannelTable>
+  <Channel Value="0" Label=""/>
+  <Channel Value="9" Label="Pads"/>
+ </MidiChannelTable>
+</InputProfile>

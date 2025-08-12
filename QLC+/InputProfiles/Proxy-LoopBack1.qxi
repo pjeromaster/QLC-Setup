@@ -14,7 +14,35 @@
   <Type>Button</Type>
  </Channel>
  <Channel Number="1">
-  <Name>Next Par Pattern</Name>
+  <Name>Beat 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="2">
+  <Name>Beat 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="3">
+  <Name>Beat 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="4">
+  <Name>Beat 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="5">
+  <Name>Fade-In</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="6">
+  <Name>Fade-In Reset</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="7">
+  <Name>Fade-Out</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="8">
+  <Name>Fade-Out Reset</Name>
   <Type>Button</Type>
  </Channel>
  <Channel Number="9">
@@ -32,5 +60,88 @@
  <Channel Number="12">
   <Name>ParPattern D</Name>
   <Type>Button</Type>
+ </Channel>
+ <Channel Number="13">
+  <Name>Next Pattern</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="99">
+  <Name>DummyPar LF Intensity</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="100">
+  <Name>DummyPar LF R
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="101">
+  <Name>DummyPar LF G
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="102">
+  <Name>DummyPar LF B
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="103">
+  <Name>DummyPar RF Intensity
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="104">
+  <Name>DummyPar RF R
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="105">
+  <Name>DummyPar RF G
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="106">
+  <Name>DummyPar RF B
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="107">
+  <Name>DummyPar RB Intensity
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="108">
+  <Name>DummyPar RB R
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="109">
+  <Name>DummyPar RB G
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="110">
+  <Name>DummyPar RB B
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="111">
+  <Name>DummyPar LB Intensity
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="112">
+  <Name>DummyPar LB R
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="113">
+  <Name>DummyPar LB G
+</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="114">
+  <Name>DummyPar LB B
+</Name>
+  <Type>Slider</Type>
  </Channel>
 </InputProfile>
