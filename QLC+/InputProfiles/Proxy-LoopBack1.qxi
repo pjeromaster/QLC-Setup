@@ -144,4 +144,12 @@
 </Name>
   <Type>Slider</Type>
  </Channel>
+ <Channel Number="119">
+  <Name>Frontlight Intensity</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="120">
+  <Name>Floorlight Intensity</Name>
+  <Type>Slider</Type>
+ </Channel>
 </InputProfile>
