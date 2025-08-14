@@ -6,43 +6,15 @@ var testAlgo;
         algo.name = "Switch2";
         algo.author = "Proxy";
         algo.acceptColors = 5;
-        algo.colorArray = [ 0xFF0000, 0xFFFF00, 0x00FF00, 0x00FFFF, 0x0000FF ];
+        algo.colorArray = [ 0xff00ff , 0x00ff00, 0x000000, 0x000000, 0x000000];
         algo.properties = new Array();
-
-        algo.use1 = 1;
-        algo.setUse1 = function (value) { algo.use1 = value === "Yes" ? 1 : 0; };
-        algo.getUse1 = function () { return algo.use1 === 1 ? "Yes" : "No"; };
-        algo.properties.push("name:Use1|type:list|display:Use Color 1|values:No,Yes|write:setUse1|read:getUse1");
-
-        algo.use2 = 1;
-        algo.setUse2 = function (value) { algo.use2 = value === "Yes" ? 1 : 0; };
-        algo.getUse2 = function () { return algo.use2 === 1 ? "Yes" : "No"; };
-        algo.properties.push("name:Use2|type:list|display:Use Color 2|values:No,Yes|write:setUse2|read:getUse2");
-
-        algo.use3 = 1;
-        algo.setUse3 = function (value) { algo.use3 = value === "Yes" ? 1 : 0; };
-        algo.getUse3 = function () { return algo.use3 === 1 ? "Yes" : "No"; };
-        algo.properties.push("name:Use3|type:list|display:Use Color 3|values:No,Yes|write:setUse3|read:getUse3");
-
-        algo.use4 = 1;
-        algo.setUse4 = function (value) { algo.use4 = value === "Yes" ? 1 : 0; };
-        algo.getUse4 = function () { return algo.use4 === 1 ? "Yes" : "No"; };
-        algo.properties.push("name:Use4|type:list|display:Use Color 4|values:No,Yes|write:setUse4|read:getUse4");
-
-        algo.use5 = 1;
-        algo.setUse5 = function (value) { algo.use5 = value === "Yes" ? 1 : 0; };
-        algo.getUse5 = function () { return algo.use5 === 1 ? "Yes" : "No"; };
-        algo.properties.push("name:Use5|type:list|display:Use Color 5|values:No,Yes|write:setUse5|read:getUse5");
 
         algo.delay = 0;
         algo.properties.push("name:delay|type:range|display:Delay|values:0,8|write:setDelay|read:getDelay");
-        algo.setDelay = function (_delay) {
-            algo.delay = Number(_delay);
-            // algo.totalSteps = (1 + Number(_delay)) * 4;
-        };
-
+        algo.setDelay = function (_delay) {algo.delay = Number(_delay);};
         algo.getDelay = function () { return algo.delay; };
 
+        algo.rgbMapGetColors = function () {return algo.colorArray;}
         algo.rgbMapSetColors = function (rawColors) {
             if (!Array.isArray(rawColors))
                 return;
@@ -77,17 +49,13 @@ var testAlgo;
             }
             return map;
         };
-        algo.getAvailableColors = function(){
+        algo.getAvailableColors = function () {
             var colors = Array();
-            if(algo.use1) colors.push(algo.colorArray[0]);
-            if(algo.use2) colors.push(algo.colorArray[1]);
-            if(algo.use3) colors.push(algo.colorArray[2]);
-            if(algo.use4) colors.push(algo.colorArray[3]);
-            if(algo.use5) colors.push(algo.colorArray[4]);
+            for (var i = 0; i < algo.acceptColors; i++)
+                if (algo.colorArray[i] > 0)
+                    colors.push(algo.colorArray[i]);
             return colors;
         }
-
-        algo.rgbMapGetColors = function () {return algo.colorArray;}
         algo.step = 0;
         algo.stepdelay = 0;
         algo.rgbMap = function (width, height, rgb, progstep) {
@@ -107,6 +75,7 @@ var testAlgo;
                 if((algo.step%2) === 0)
                     colorA = colors[0];
                 else colorB = colors[0];
+                algo.step++;
             }
             else if(algo.delay === 0){
                 if(algo.step >= colors.length) algo.step = 0;

@@ -826,10 +826,10 @@
    <FixtureVal ID="23">0,0</FixtureVal>
   </Function>
   <Function ID="38" Type="RGBMatrix" Name="Par Alt A">
-   <Speed FadeIn="109" FadeOut="109" Duration="439"/>
+   <Speed FadeIn="439" FadeOut="439" Duration="439"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Switch</Algorithm>
+   <Algorithm Type="Script">Switch2</Algorithm>
    <Color Index="0">4294901760</Color>
    <Color Index="1">4278190335</Color>
    <Color Index="2">4278233727</Color>
@@ -837,12 +837,13 @@
    <Color Index="4">4289374975</Color>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>0</FixtureGroup>
+   <Property Name="delay" Value="0"/>
   </Function>
   <Function ID="39" Type="RGBMatrix" Name="Par Alt B">
-   <Speed FadeIn="109" FadeOut="109" Duration="439"/>
+   <Speed FadeIn="439" FadeOut="439" Duration="439"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Switch</Algorithm>
+   <Algorithm Type="Script">Switch2</Algorithm>
    <Color Index="0">4278255615</Color>
    <Color Index="1">4278255360</Color>
    <Color Index="2">4287037586</Color>
@@ -934,10 +935,10 @@
    <FixtureVal ID="2">6,243</FixtureVal>
   </Function>
   <Function ID="56" Type="RGBMatrix" Name="Par Alt C">
-   <Speed FadeIn="109" FadeOut="109" Duration="439"/>
+   <Speed FadeIn="439" FadeOut="439" Duration="439"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Switch</Algorithm>
+   <Algorithm Type="Script">Switch2</Algorithm>
    <Color Index="0">4278255360</Color>
    <Color Index="1">4278190335</Color>
    <ControlMode>RGB</ControlMode>
@@ -945,10 +946,10 @@
    <Property Name="delay" Value="0"/>
   </Function>
   <Function ID="57" Type="RGBMatrix" Name="Par Alt D">
-   <Speed FadeIn="109" FadeOut="109" Duration="439"/>
+   <Speed FadeIn="439" FadeOut="439" Duration="439"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
-   <Algorithm Type="Script">Checkers</Algorithm>
+   <Algorithm Type="Script">Switch2</Algorithm>
    <Color Index="0">4294902015</Color>
    <Color Index="1">4278190335</Color>
    <ControlMode>RGB</ControlMode>
@@ -985,7 +986,7 @@
    <Step Number="3" FadeIn="0" Hold="50" FadeOut="0" Values="2"/>
   </Function>
   <Function ID="64" Type="Chaser" Name="ParPat">
-   <Speed FadeIn="0" FadeOut="0" Duration="1763"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="1755"/>
    <Direction>Forward</Direction>
    <RunOrder>Random</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1246,7 +1247,7 @@
    <FixtureVal ID="11">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="12">0,0,1,0,2,255</FixtureVal>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="0">
+  <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Roboto,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -1471,7 +1472,7 @@
      <Tap>
       <Input Universe="4" Channel="1"/>
      </Tap>
-     <Time>1763</Time>
+     <Time>1755</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">64</Function>
     </SpeedDial>
     <Matrix Caption="Par Alt B" ID="56">
@@ -1653,7 +1654,7 @@
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
-    <Collapsed>True</Collapsed>
+    <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <SpeedDial Caption="BPM" ID="2">
      <WindowState Visible="True" X="210" Y="40" Width="245" Height="210"/>
@@ -2179,7 +2180,7 @@
        <Font>Default</Font>
       </Appearance>
       <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-      <Level LowLimit="1" HighLimit="127" Value="0">
+      <Level LowLimit="1" HighLimit="127" Value="1">
        <Channel Fixture="2">0</Channel>
       </Level>
       <Playback>
@@ -2308,7 +2309,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="78"/>
       <Action>Toggle</Action>
@@ -2321,7 +2322,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,36,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,36,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="77"/>
       <Action>Toggle</Action>
@@ -2334,7 +2335,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="79"/>
       <Action>Toggle</Action>
@@ -2347,7 +2348,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="106"/>
       <Action>Toggle</Action>
@@ -2360,7 +2361,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="107"/>
       <Action>Toggle</Action>
@@ -2373,7 +2374,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="108"/>
       <Action>Toggle</Action>
@@ -2386,7 +2387,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="109"/>
       <Action>Toggle</Action>
@@ -2399,7 +2400,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="110"/>
       <Action>Toggle</Action>
@@ -2412,7 +2413,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="111"/>
       <Action>Toggle</Action>
@@ -2425,7 +2426,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="112"/>
       <Action>Toggle</Action>
@@ -2438,7 +2439,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="113"/>
       <Action>Toggle</Action>
@@ -2451,7 +2452,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="114"/>
       <Action>Toggle</Action>
@@ -2464,7 +2465,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="115"/>
       <Action>Toggle</Action>
@@ -2477,7 +2478,7 @@
        <ForegroundColor>4294967295</ForegroundColor>
        <BackgroundColor>4280953390</BackgroundColor>
        <BackgroundImage>None</BackgroundImage>
-       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular</Font>
+       <Font>Roboto,48,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
       </Appearance>
       <Function ID="116"/>
       <Action>Toggle</Action>
@@ -2606,7 +2607,7 @@
        </Appearance>
        <Input Universe="4" Channel="101"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="255">
         <Channel Fixture="13">1</Channel>
        </Level>
        <Playback>
@@ -2624,7 +2625,7 @@
        </Appearance>
        <Input Universe="4" Channel="102"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="244">
         <Channel Fixture="13">2</Channel>
        </Level>
        <Playback>
@@ -2674,7 +2675,7 @@
        </Appearance>
        <Input Universe="4" Channel="104"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="129">
         <Channel Fixture="15">0</Channel>
        </Level>
        <Playback>
@@ -2692,7 +2693,7 @@
        </Appearance>
        <Input Universe="4" Channel="105"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="11">
         <Channel Fixture="15">1</Channel>
        </Level>
        <Playback>
@@ -2710,7 +2711,7 @@
        </Appearance>
        <Input Universe="4" Channel="106"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="150">
         <Channel Fixture="15">2</Channel>
        </Level>
        <Playback>
@@ -2778,7 +2779,7 @@
        </Appearance>
        <Input Universe="4" Channel="109"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="255">
         <Channel Fixture="0">1</Channel>
        </Level>
        <Playback>
@@ -2796,7 +2797,7 @@
        </Appearance>
        <Input Universe="4" Channel="110"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="244">
         <Channel Fixture="0">2</Channel>
        </Level>
        <Playback>
@@ -2846,7 +2847,7 @@
        </Appearance>
        <Input Universe="4" Channel="112"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="129">
         <Channel Fixture="6">0</Channel>
        </Level>
        <Playback>
@@ -2864,7 +2865,7 @@
        </Appearance>
        <Input Universe="4" Channel="113"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="11">
         <Channel Fixture="6">1</Channel>
        </Level>
        <Playback>
@@ -2882,7 +2883,7 @@
        </Appearance>
        <Input Universe="4" Channel="114"/>
        <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-       <Level LowLimit="0" HighLimit="255" Value="0">
+       <Level LowLimit="0" HighLimit="255" Value="150">
         <Channel Fixture="6">2</Channel>
        </Level>
        <Playback>
